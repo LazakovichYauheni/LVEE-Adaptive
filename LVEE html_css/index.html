@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LVEE</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="animation/Animate.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="node_modules/getmdl-select/getmdl-select.min.css">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="mdl_style.css">
+    <script defer src="node_modules/getmdl-select/getmdl-select.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="node_modules/materialize/dist/js/materialize.min.js"></script>
+    <script src="animation/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="menu" id="menu">
+        <button onclick="openNav()" style=" z-index:800; background-color: transparent;  border-color: transparent; margin-left:2%; top:50%; cursor: pointer;outline: none;">
+            <a class="materialcolor">
+                <i class="material-icons" id="btbt">
+                    menu
+                </i>
+            </a>
+        </button>
+
+        <div class="search-box" style="z-index: 800;">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <div class="signlog" tabindex="1">
+            <button id="matbtn4" onclick="showcontent('data')" class="mdl-button mdl-js-button mdl-button--outlined mdl-button--colored">
+                LOG IN/ SIGN UP
+            </button>
+        </div>
+
+        <div class="loginicon">
+            <button onclick="showcontent('data')" style="background-color: transparent; border: none; outline: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="40" height="40"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M57.33333,14.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v35.83333h14.33333v-35.83333h57.33333v114.66667h-57.33333v-35.83333h-14.33333v35.83333c0,7.91917 6.41417,14.33333 14.33333,14.33333h57.33333c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-114.66667c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM71.66667,57.33333v21.5h-57.33333v14.33333h57.33333v21.5l28.66667,-28.66667z"></path></g></g></svg>
+            </button>
+        </div>
+
+    </header>
+    
+    <div class="usertext" tabindex="1" style="position:absolute; top:80px; right: 0%; float: right; z-index: 1000;">
+        <button id="userbtn" onclick="openNavRight()" class="mdl-button mdl-js-button mdl-button--outlined mdl-button--colored" >
+            <p class="fixmylife" style="font-size: 20px;
+            font-family: Trade Gothic LT Std;text-align: center; position: relative; margin:0 auto;">FixMyLife</p>
+            <i class="material-icons" id="userfixicon" style="font-size: 30pt; text-align: right; position: relative; margin: 0 auto; display: none;">
+                perm_identity
+            </i>
+        </button>
+    </div>
+
+    <div id="navRight" class="rh">
+        <div style="background: #f2f2f2; width: 100%;height: 200px;position: relative; top:0%; overflow: hidden;">
+            <a href="javascript:void(0)" class="closebtnright" onclick="closeNavRight()" style="display: none;">
+                <i class="material-icons" style="font-size:40px;">close</i>
+            </a>
+            <i class="material-icons" id="usericon">
+                perm_identity
+            </i>
+            <h6 id="user">FixMyLife</h6>
+        </div>
+        <div style="width:100%; position: relative; height: calc(100%-200px);">
+            <div style="position: relative;width:100%;">
+                <h6 class="h6styleusr" onclick="openMenu();showcontent('accmng'); closeScr('authorship');closeScr('abstracts'); closeScr('linkedacc')">Account Management</h6>
+                <h6 class="h6styleusr" onclick="openMenu();showcontent('authorship');closeScr('accmng');closeScr('abstracts'); closeScr('linkedacc')">Authorship</h6>
+                <h6 class="h6styleusr" onclick="openMenu();showcontent('abstracts');closeScr('accmng');closeScr('authorship'); closeScr('linkedacc')">Abstracts</h6>
+                <h6 class="h6styleusr" onclick="openMenu();showcontent('linkedacc');closeScr('accmng');closeScr('authorship'); closeScr('abstracts')">Linked Accounts</h6>
+            </div>
+            <div style="width: 100%; position: relative; margin-bottom: 50px;">
+                <button id="signout" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="position:relative !important;">
+                    SIGN OUT
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="accmng" class="accountmanagement" style="display: none; margin-top: 80px;">
+        <a href="javascript:void(0)" class="closebtn btnscreens" onclick="closeNavRight(); closeScreens('accmng'); closeNavR()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+        <h1 class="accmngtitle">ACCOUNT MANAGEMENT</h1>
+        <button id="edit" onclick="showcontent('accmng'); showcontent('editacc')" class="mdl-button mdl-js-button mdl-button--outlined mdl-button--colored">
+            EDIT
+        </button>
+        <div class="left">
+            <h6 class="lefttitle">First Name</h6>
+            <h6 class="leftsubstyle">Yauheni</h6>
+            <h6 class="lefttitle">Email Address</h6>
+            <h6 class="leftsubstyle">aaaa@aaaa.com</h6>
+            <h6 class="lefttitle">Country</h6>
+            <h6 class="leftsubstyle">Belarus</h6>
+        </div>
+        <div class="right">
+            <h6 class="righttitle">Last Name</h6>
+            <h6 class="rightsubstyle">Lazakovich</h6>
+            <h6 class="righttitle">City</h6>
+            <h6 class="rightsubstyle">Brest</h6>
+            <h6 class="righttitle">Website Style</h6>
+            <h6 class="rightsubstyle">White</h6>
+        </div>
+    </div>
+
+    <div id="editacc" class="editacc" style="display: none; margin-top: 80px;">
+        <a href="javascript:void(0)" class="closebtn btnscreens" onclick="closeNavRight(); closeScreens('editacc');closeNavR()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+        <h1 class="edittitle">EDIT ACCOUNT</h1>
+        <h6 class="basictitle">Basic Info</h6>
+        <div class="basiccontainer">
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label changelab">
+                <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
+                <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important;">Name</label>
+            </div>
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label changelab" >
+                <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
+                <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important;">Email</label>
+            </div>
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label lastname changelab" >
+                <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
+                <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important;">Last Name</label>
+            </div>
+        </div>
+        <h6 class="passtitle">Change Your Password</h6>
+        <div class="passcontainer">
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label changelab">
+                <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
+                <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important;">Password</label>
+            </div>
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label confirmpass changelab">
+                <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
+                <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important;">Confirm</label>
+            </div>
+        </div>
+        <h6 class="locationtitle">Location</h6>
+        <div class="locationcontainer">
+            <div id="changeacc" class="mdl-textfield mdl-js-textfield getmdl-select location">
+                <input type="text" value="" class="mdl-textfield__input emailinput inputs" id="sample2" readonly>
+                <input type="hidden" value="" name="sample2">
+                <i class="mdl-icon-toggle__label material-icons iconarrow">keyboard_arrow_down</i>
+                <label for="sample2" class="mdl-textfield__label labelacc labels" style="margin-left: unset !important; margin-right: unset !important;">Country</label>
+                <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu" style="width: unset !important;">
+                    <li class="mdl-menu__item" data-val="DEU">Germany</li>
+                    <li class="mdl-menu__item" data-val="BLR">Belarus</li>
+                    <li class="mdl-menu__item" data-val="RUS">Russia</li>
+                </ul>
+            </div>
+           
+            <div class="mdl-textfield mdl-js-textfield getmdl-select acccity">
+                <input type="text" value="" class="mdl-textfield__input emailinput inputs" id="sample4" readonly>
+                <input type="hidden" value="" name="sample3">
+                <i class="mdl-icon-toggle__label material-icons iconarrow">keyboard_arrow_down</i>
+                <label for="sample4" class="mdl-textfield__label labelacc labels" style="margin-left: unset !important; margin-right: unset !important;">City</label>
+                <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu" style="width: unset !important;">
+                    <li class="mdl-menu__item" data-val="DEU">Brest</li>
+                    <li class="mdl-menu__item" data-val="BLR">Minsk</li>
+                </ul>
+            </div>
+        </div> 
+        <h6 class="themetitle">Website Style</h6>
+        <div class="themecontainer" style="margin-bottom: 100px;">
+            <div class="mdl-textfield mdl-js-textfield getmdl-select theme">
+                <input type="text" value="" class="mdl-textfield__input emailinput inputs" id="sample1" readonly>
+                <input type="hidden" value="" name="sample1">
+                <i class="mdl-icon-toggle__label material-icons iconarrow">keyboard_arrow_down</i>
+                <label for="sample1" class="mdl-textfield__label labelacc labels" style="margin-left: unset !important; margin-right: unset !important;">Style</label>
+                <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu" style="width: unset !important;">
+                    <li class="mdl-menu__item" data-val="DEU">Red</li>
+                    <li class="mdl-menu__item" data-val="BLR">Green</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="authorship" class="authorship" style="display: none; margin-top: 80px;">
+        <a href="javascript:void(0)" class="closebtn btnscreens" onclick="closeNavRight(); closeScreens('authorship'); closeNavR()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+        <h1 class="edittitle">AUTHORSHIP</h1>
+    </div>
+
+    <div id="abstracts" class="abstracts" style="display: none; margin-top: 80px;">
+        <a href="javascript:void(0)" class="closebtn btnscreens" onclick="closeNavRight(); closeScreens('abstracts'); closeNavR()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+        <h1 class="edittitle">ABSTRACTS</h1>
+    </div>
+
+    <div id="linkedacc" class="linkedacc" style="display: none; margin-top: 80px;">
+        <a href="javascript:void(0)" class="closebtn btnscreens" onclick="closeNavRight(); closeScreens('linkedacc'); closeNavR()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+        <h1 class="edittitle">LINKED ACCOUNTS</h1>
+        <div class="linkedcontainer">
+            <a href="https://facebook.com" class="facebooklinked">
+                <img src='icons8-facebookRed.png' style="width: 45px;"></img>
+            </a>
+            <a href="https://twitter.com" class="twitterlinked">
+                <img src='icons8-twitterRed.png' style="width: 50px;"></img>
+            </a>
+            <a href="https://vk.com" class="vklinked">
+                <img src='icons8-vkRed.png' style="width: 50px;"></img>
+            </a>
+        </div>
+    </div>
+
+    <div id="data" class="data wow fadeInRight" data-wow-duration="0.5s" style="display: none;">
+        <div id="carddata" class="mdldata mdl-card mdl-shadow--3dp">
+            <div id="textcardtitle" class="mdl-card__title">Sign in to LVEE conference</div>
+            <div id="username" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Username</label>
+            </div>
+            <div id="password" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Password</label>
+            </div>
+            <label id="checkbox" class="mdl-checkbox mdl-js-checkbox" for="checkbox1">
+                <div>
+                    <input type="checkbox" id="checkbox1" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Remember my Username</span>
+                </div>
+            </label>
+            <h6 class="forgot">Forgot password</h6>
+            <button id="signin" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                SIGN IN
+            </button>
+            <h6 class="or">Or</h6>
+            <button onclick="showcontent('data');showcontent('createacc')" id="create" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                CREATE ACCOUNT
+            </button>
+        </div>
+    </div>
+
+    <div id="createacc" class="createacc wow fadeInRight" data-wow-duration="0.5s" style="display:none;">
+        <div id="carddata" class="mdldata mdl-card mdl-shadow--3dp">
+            <div id="createcardtitle" class="mdl-card__title">CREATE YOUR LVEE ACCOUNT</div>
+            <div style="background: #f2f2f2; width: 100%;height: 350px;position: absolute; top:15%"> </div>
+            <h6 class="emtitle">Your Email</h6>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Email</label>
+            </div>
+            <h6 class="distr">Sign up for distribution</h6>
+            <label id="checkboxnews" class="mdl-checkbox mdl-js-checkbox" for="checkbox2">
+                <div>
+                    <input type="checkbox" id="checkbox2" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Sign me up for the latest LVEE news, and more</span>
+                </div>
+            </label>
+            <button onclick="showcontent('data');showcontent('createacc')" id="backbtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; left:12%; top:25%;">
+                    arrow_back
+                </i>
+                <p style="position: absolute; left:30%; top:25%; font-size: 15pt;font-weight: 500;" class="Backtitle">Back</p>
+            </button>
+            <div class="dots">
+                <div class="dot1"></div>
+                <div class="dot2acc"></div>
+                <div class="dot3acc"></div>
+                <div class="dot4"></div>
+            </div>
+            <button onclick="showcontent('createacc');showcontent('createaccuserpass')" id="continuebtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; right: 12%; top:25%;">
+                    arrow_forward
+                </i>
+                <p style="position: absolute; left:5%; top:25%; font-size: 15pt;font-weight: 500;" class="conttitle">Continue</p>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="createaccuserpass" class="createaccuserpass wow fadeInRight" data-wow-duration="0.5s" style="display:none;">
+        <div id="carddata" class="mdldata mdl-card mdl-shadow--3dp">
+            <div id="createcardtitle" class="mdl-card__title">CREATE YOUR LVEE ACCOUNT</div>
+            <div style="background: #f2f2f2; width: 100%;height: 350px;position: absolute; top:15%"> </div>
+            <h6 class="uspasstitle">Account</h6>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Username</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:50%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Password</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:65%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Confirm password</label>
+            </div>
+            <button onclick="showcontent('createacc');showcontent('createaccuserpass')" id="backbtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; left:12%; top:25%;">
+                    arrow_back
+                </i>
+                <p style="position: absolute; left:30%; top:25%; font-size: 15pt;font-weight: 500;" class="Backtitle">Back</p>
+            </button>
+            <div class="dots">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+                <div class="dot4"></div>
+            </div>
+            <button onclick="showcontent('createaccuserpass');showcontent('createinformation')" id="continuebtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; right: 12%; top:25%;">
+                    arrow_forward
+                </i>
+                <p style="position: absolute; left:5%; top:25%; font-size: 15pt;font-weight: 500;" class="conttitle">Continue</p>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="createinformation" class="createinformation wow fadeInRight" data-wow-duration="0.5s" style="display:none;">
+        <div id="carddata" class="mdldata mdl-card mdl-shadow--3dp">
+            <div id="createcardtitle" class="mdl-card__title">CREATE YOUR LVEE ACCOUNT</div>
+            <div style="background: #f2f2f2; width: 100%;height: 350px;position: absolute; top:15%"> </div>
+            <h6 class="infotitle">Information</h6>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:30%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">First Name</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:40%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Last Name</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:50%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Country</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:60%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Location</label>
+            </div>
+            <div id="email" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="top:70%;">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Occupation</label>
+            </div>
+            <button onclick="showcontent('createaccuserpass');showcontent('createinformation')" id="backbtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; left:12%; top:25%;">
+                    arrow_back
+                </i>
+                <p style="position: absolute; left:30%; top:25%; font-size: 15pt;font-weight: 500;" class="Backtitle">Back</p>
+            </button>
+            <div class="dots">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3acc"></div>
+                <div class="dot4info"></div>
+            </div>
+            <button onclick="showcontent('createinformation');showcontent('completeregister')" id="continuebtn" class="mdl-button mdl-js-button">
+                <i class="material-icons" style="position: absolute; right: 12%; top:25%;">
+                    arrow_forward
+                </i>
+                <p style="position: absolute; left:5%; top:25%; font-size: 15pt;font-weight: 500;" class="conttitle">Continue</p>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="completeregister" class="completeregister wow fadeInRight" data-wow-duration="0.5s" style="display:none;">
+        <div id="carddata" class="mdldata mdl-card mdl-shadow--3dp">
+            <div style="width: 80px; height: 80px; position: absolute; top:17%; left:50%; transform:translate(-50%,-50%);">
+                <img src='complete-15.jpg' style="width:80px; height: 80px;" />
+            </div>
+            <div id="completecardtitle" class="mdl-card__title">ACCOUNT CREATION COMPLETE!</div>
+            <div>
+                <h6 class="confirmreg mdl-checkbox__label">An email has been sent to usermail@mail.com. Please, confirm your account.</h6>
+            </div>
+            <button onclick="showcontent('completeregister')" id="completebtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <!--<div class="language">
+        <button class="langbtn" onclick="dropdown()" style="background-color:transparent; cursor: pointer; border:none; border-color: transparent; outline: none;">
+            <h6 class="langtext">EN</h6>
+            <div class="dropdown-content" id="dropdown">
+                <h6 class="langtext">RU</h6>
+                <h6 class="langtext">FR</h6>
+            </div>
+        </button>
+    </div> -->
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+         
+        <div class="menutitlecontainer">
+            <div style="width:55%; float: left;">
+                <h1 class="menutitle">LVEE</h1>
+            </div>
+            <div class="imagecontainer" style="width: 43%; float: right;">
+                <a href="https://facebook.com" class="facebook">
+                    <img src='icons8-facebookRed.png' class="facebookimg" style="width: 45px; padding-right: 5%;"></img>
+                </a>
+                <a href="https://twitter.com" class="twitter">
+                    <img src='icons8-twitterRed.png' class="twitterimg" style="width: 50px; padding-right: 5%;"></img>
+                </a>
+                <a href="https://vk.com" class="vk">
+                    <img src='icons8-vkRed.png' class="vkimg" style="width: 50px;"></img>
+                </a>
+            </div>
+        </div>
+
+        <div id="desktopnav">
+            <div style="overflow: auto; width: 50%; float: left;">
+                <div class="presenttitlecontainer">
+                    <h3 class="presenttitle">PRESENTATIONS</h3>
+                </div>
+                <div class="h6stylecontainer">
+                    <h6 class="h6style">Programme</h6>
+                    <h6 class="h6style">On Presentations</h6>
+                    <h6 class="h6style">Abstract Guidelines</h6>
+                    <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                    <h6 class="h6style">LVEE 2017</h6>
+                    <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                    <h6 class="h6style">More</h6>
+                </div>
+                <div class="sponstitlecontainer">
+                    <h3 class="sponstitle">SPONSORS</h3>
+                </div>
+                <div class="h6stylecontainer">
+                    <h6 class="h6style">Technical sponsors</h6>
+                    <h6 class="h6style">Information partners</h6>
+                    <h6 class="h6style">Technical partners</h6>
+                </div>
+            </div>
+            <div style="overflow: auto; width: 45%; float: right; padding-left: 20px;">
+                <div class="contacttitlecontainer">
+                    <h3 class="contacttitle">CONTACTS</h3>
+                </div>
+                <div class="h6contactstylecontainer">
+                    <h6 class="h6contactstyle">Official Contacts</h6>
+                    <h6 class="h6contactstyle">Organisers</h6>
+                    <h6 class="h6contactstyle">LUG</h6>
+                </div>
+                <div class="parttitlecontainer">
+                    <h3 class="parttitle">PARTICIPANTS</h3>
+                </div>
+                <div class="h6contactstylecontainer">
+                    <h6 class="h6contactstyle">Personal Profile</h6>
+                    <h6 class="h6contactstyle">List</h6>
+                    <h6 class="h6contactstyle">Wiki</h6>
+                    <h6 class="h6contactstyle">Volunteers</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobilenav">
+            <div>
+                <div class="presenttitlecontainer" onclick="openitemslist()">
+                    <h3 class="presenttitle">PRESENTATIONS</h3>
+                </div>
+                <ul id="itemslist">
+                    <div class="h6stylecontainer">
+                        <h6 class="h6style">Programme</h6>
+                        <h6 class="h6style">On Presentations</h6>
+                        <h6 class="h6style">Abstract Guidelines</h6>
+                        <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                        <h6 class="h6style">LVEE 2017</h6>
+                        <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                        <h6 class="h6style">More</h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="contacttitlecontainer" onclick="opencontactitemslist()">
+                    <h3 class="contacttitle">CONTACTS</h3>
+                </div>
+                <ul id="itemscontactlist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Official Contacts</h6>
+                        <h6 class="h6contactstyle">Organisers</h6>
+                        <h6 class="h6contactstyle">LUG</h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="parttitlecontainer" onclick="openpartitemslist()">
+                    <h3 class="parttitle">PARTICIPANTS</h3>
+                </div>
+                <ul id="itemspartlist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Personal Profile</h6>
+                        <h6 class="h6contactstyle">List</h6>
+                        <h6 class="h6contactstyle">Wiki</h6>
+                        <h6 class="h6contactstyle">Volunteers</h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="sponstitlecontainer" onclick="opensponsitemslist()">
+                    <h3 class="sponstitle">SPONSORS</h3>
+                </div>
+                <ul id="itemssponslist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Technical sponsors</h6>
+                        <h6 class="h6contactstyle">Information partners</h6>
+                        <h6 class="h6contactstyle">Technical partners</h6>
+                    </div>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
+    <div class="firstpic" style="margin-top:0px; max-width: 100%;" onclick="closeNavRight()">
+        <div style=" background-color: #4A4A4A;">
+            <div class="backgroundimg">
+                <div class="textlvee" style="margin-top:20%; align-items: center; min-height: 50vh;">
+                    <h1 class="lveeheadtext">LINUX VACATION/</h1>
+                    <h1 class="lveeheadtext">EASTERN EUROPE</h1>
+                    <h2 class="lveesubtext">International conference of developers and users of free / open source software
+                    </h2>
+                </div>
+                <img id="background" src="LVEEback.jpg" style="width: 100%; max-width: 100%;">
+                <img id="backgroundmobile" src="BackgroundMobile.jpg" style="width: 100%; display: none;  max-width: 100%;">
+            </div>
+        </div>
+    </div>
+
+     <div class="currentconference" onclick="closeNavRight()">
+        <h1 class="currtitle wow fadeIn" data-wow-duration="2s" data-wow-offset="40">COMMING CONFERENCE</h1>
+        <div class="currimage wow fadeInLeft" data-wow-duration="1.3s" data-wow-offset="100">
+            <div class="imgcurr"></div>
+            <h1 class="lvee2020">LVEE 2020</h1>
+            <h3 class="conferencedate">08 / 08 / 2020</h3>
+            <h3 class="conferenceplace">Minsk, Belarus</h3>
+            <button id="matbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                MORE
+            </button>
+        </div>
+    </div>
+
+    <div class="news" onclick="closeNavRight()">
+        <h1 class="newstitle wow fadeIn" data-wow-duration="2s" data-wow-offset="40">NEWS AND UPDATES</h1>
+        <div class="cardcontainer1 wow fadeInLeft" data-wow-duration="1.2s" data-wow-offset="50">
+        <div id="card1" class="mdl-card mdl-shadow--3dp" style="border-radius: 8px;">
+            <div id="textcard1" class="mdl-card__title">International conference of developers and users of free / open source software
+            </div>
+        </div>
+        </div>
+        <div class="cardcontainer1 cardcontainer2 wow fadeInRight" data-wow-duration="1.2s" data-wow-offset="50">
+        <div id="card2" class="mdl1 mdl-card mdl-shadow--3dp" style="border-radius: 8px;">
+            <div id="textcard2" class="mdl-card__title">International conference of developers and users of free / open source software
+            </div>
+        </div>
+        </div>
+        <div class="cardcontainer1 cardcontainer3 wow fadeInLeft" data-wow-duration="1.2s" data-wow-offset="50">
+        <div id="card3" class="mdl2 mdl-card mdl-shadow--3dp" style="border-radius: 8px;">
+            <div id="textcard3" class="mdl-card__title">International conference of developers and users of free / open source software
+            </div>
+        </div>
+        </div>
+        <div class="cardcontainer1 cardcontainer4 wow fadeInRight" data-wow-duration="1.2s" data-wow-offset="50">
+        <div id="card4" class="mdl3 mdl-card mdl-shadow--3dp" style="border-radius: 8px;">
+            <div id="textcard4" class="mdl-card__title">International conference of developers and users of free / open source software
+            </div>
+        </div>
+        </div>
+        <div class="cardcontainer1 cardcontainer5 wow fadeInLeft" data-wow-duration="1.2s" data-wow-offset="50">
+        <div id="card5" class="mdl4 mdl-card mdl-shadow--3dp" style="border-radius: 8px;">
+            <div id="textcard5" class="mdl-card__title">International conference of developers and users of free / open source software
+            </div>
+        </div>
+        </div> 
+        <div>
+        <button id="matbtn2" class="mdl-button mdl-js-button mdl-button--outlined mdl-button--colored">
+            MORE
+        </button>
+        </div>
+    </div>
+
+    <div class="previous" onclick="closeNavRight()">
+        <h1 class="prevtitle wow fadeIn" data-wow-duration="2s" data-wow-offset="40">PREVIOUS CONFERENCES</h1>
+        <div>
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item" href="#one!">
+                    <div class="prevcontainercard1">
+                        <div id="prevcard1" class="mdl-card mdl-shadow--3dp"></div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#two!">
+                    <div class="prevcontainercard1">
+                        <div id="prevcard1" class="mdl-card mdl-shadow--3dp"></div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#three!">
+                    <div class="prevcontainercard1">
+                        <div id="prevcard1" class="mdl-card mdl-shadow--3dp"></div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#four!">
+                    <div class="prevcontainercard1">
+                        <div id="prevcard1" class="mdl-card mdl-shadow--3dp"></div>
+                    </div>
+                </div>
+                <div class="leftarrow">
+                    <button id="left" style="background: transparent; outline: none; border: none;">
+                        <img src="LeftArrow.png"/>
+                    </button>
+                </div>
+                <div class="rightarrow">
+                    <button id="right" style="background: transparent; outline: none; border: none;">
+                        <img src="RightArrow.png"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="matbtn3" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                MORE
+            </button>
+        </div>
+    </div>
+
+    <div class="sponsors" onclick="closeNavRight()">
+        <h1 class="sponsorsTitle">SPONSORS</h1>
+        <div class="sposcontainer">
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/sam-solutions.gif'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/epam-logo.png'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/Percona_P_Logo_Color-SQ.png'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/Collabora_logo_144px.png'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/mycloud.png'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/redhat.png'>
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='sponsors/garage.png'>
+            </div>
+        </div>
+        <div class="carousel carousel-slider center carouselsponsors" style="display: none;">
+            <div class="carousel-item" href="#one!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/sam-solutions.gif' class="imgspons">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/epam-logo.png' class="imgspons">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/Percona_P_Logo_Color-SQ.png' class="imgspons">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/Collabora_logo_144px.png' class="imgspons">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/mycloud.png' class="imgspons">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/redhat.png' class="imgspons">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='sponsors/garage.png' class="imgspons">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="techical">Technical Sponsors</h1>
+        <div class="techcontainer">
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/hoster_primary_logo.png' class="imgspons">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/logo.gif' class="imgspons">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/empathy.png' class="imgspons">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/maiki.png' class="imgspons">
+            </div>
+        </div>
+        <div class="carouseltech" style="display: none;">
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/hoster_primary_logo.png' class="imgspons imgtech">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/logo.gif' class="imgspons imgtech">
+            </div>
+        </div>
+        <div class="carouseltech2" style="display: none;">
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/empathy.png' class="imgspons imgtech">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='technical sponsors/maiki.png' class="imgspons imgtech">
+            </div>
+        </div>
+        <h1 class="infopartners">Information Partners</h1>
+        <div class="infocontainer">
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/linuxby.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/lxf.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/dev_by.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/mhs.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/it-event.ru.jpg' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/42.tut.by.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/Logo-ntcit-blue.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/jooble.org.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/weblancer.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/rabota_tut_by.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/itmozg.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/smsassist.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/techlabs.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/logoitg.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/it-sobytie_3.jpg' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/hashcode.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/infostart.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/logo_tech_minsk2.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/ruby_logo_en1.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/linuxpiter.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/activecloud.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/bsuir.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/trudbox.png' style="width: 100%;">
+            </div>
+            <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                <img src='information sponsors/cmit.png' style="width: 100%;">
+            </div>
+        </div>
+        <div class="carousel carousel-slider center carouselinfopartners" style="display: none;">
+            <div class="carousel-item" href="#one!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/linuxby.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/lxf.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/dev_by.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/mhs.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/it-event.ru.jpg' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/42.tut.by.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/Logo-ntcit-blue.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/jooble.org.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/weblancer.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/rabota_tut_by.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/itmozg.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/smsassist.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#four!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/techlabs.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/logoitg.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/it-sobytie_3.jpg' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/hashcode.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#five!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/infostart.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/logo_tech_minsk2.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/ruby_logo_en1.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/linuxpiter.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" href="#six!">
+                <div class="carouselsposcontainer">
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/activecloud.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/bsuir.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/trudbox.png' class="imgspons" style="width: 100%;">
+                    </div>
+                    <div style="display: inline-block; margin-left: 6px; margin-right: 6px;">
+                        <img src='information sponsors/cmit.png' class="imgspons" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mdl-mega-footer" style="background-color: #e73b3b; align-items: center; ">
+        <div class="mdl-mega-footer__top-section footertop" >
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/" style="float: left;">
+                <img src='footericon.png' style="height: 15px; width: 60px;" />
+            </a>
+            <h6 class="copyright" style="text-align: center; color:#fff; font-family: Open Sans, Noto Sans Japanese, Montserrat, sans-serif; margin:0; font-size: 10pt;">
+                All content besides materials of presentations and other specially mentioned documents is licensed under Creative Commons Attribution Share-Alike license</h6>
+        </div>
+        <div class="mdl-mega-footer__bottom-section" style="padding:0;margin-bottom: 2px;">
+            <h6 class="rights" style="text-align: center; color:#fff; font-family: Open Sans, Noto Sans Japanese, Montserrat, sans-serif; margin:0; font-size: 10pt;">
+                The website uses <a href="https://github.com/lvee/lvee-engine" style="color:#000">LVEE engine</a> and licensed under GPL license version 2.0 as <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" style="color:#000">published by the FSF</a></h6>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "getmdl-select",
+  "version": "1.0.0",
+  "main": "code.js",
+  "dependencies": {
+    "@material/menu": "^5.1.0",
+    "getmdl-select": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeIT/getmdl-select.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CreativeIT/getmdl-select/issues"
+  },
+  "homepage": "https://github.com/CreativeIT/getmdl-select#readme",
+  "description": ""
+}
