@@ -262,7 +262,11 @@ body {
     #textcard1
     {
         font-size: 14pt !important;
-        width: 230px !important;
+    }
+
+    #textcard2
+    {
+        font-size: 14pt !important;
     }
 }
 
@@ -470,7 +474,6 @@ body {
     #textcard1
     {
         font-size: 23pt !important;
-        width: 400px !important;
     }
 }
 
@@ -2527,7 +2530,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-stretch: 2px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .lveesubtext {
@@ -2579,7 +2583,7 @@ body {
     font-size: 50pt;
     color: #e73b3b;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .currimage {
@@ -2611,7 +2615,7 @@ body {
     font-size: 90pt;
     color: #fff;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .conferencedate {
@@ -2625,8 +2629,8 @@ body {
     text-align: center;
     font-size: 30pt;
     color: #fff;
-    font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .conferenceplace {
@@ -2640,8 +2644,8 @@ body {
     text-align: center;
     font-size: 30pt;
     color: #fff;
-    font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* #endregion */
@@ -2663,35 +2667,52 @@ body {
     font-size: 50pt;
     color: #fff;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #card1 {
-    background: url('lveenews-15.jpg');
+    background: #fff;
     background-size: cover;
     transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    padding-bottom: 15px;
 }
 
 #card1:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+#piccard1 {
+    width: 100%;
+}
+
 #textcard1 {
-    color: white;
+    color: rgb(231, 59, 59);
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
-    margin-top: 45px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtextcard1 {
+    color: #000;
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 25px;
+    margin-right: 25px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    width: 200px;
 }
 
 #card2 {
     
-    background: url('lveenews-16.jpg');
+    background: #fff;
     background-size: cover;
+    height: 100%;
     transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding-bottom: 15px;
 }
 
 #card2:hover {
@@ -2699,20 +2720,29 @@ body {
 }
 
 #textcard2 {
-    color: white;
+    color: rgb(231, 59, 59);
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
-    margin-top: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtextcard2 {
+    color: #000;
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 25px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    width: 320px;
 }
 
 #card3 {
-    background: url('lveenews-17.jpg');
+    background: #fff;
     background-size: cover;
     transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    padding-bottom: 15px;
 }
 
 #card3:hover {
@@ -2721,20 +2751,29 @@ body {
 
 
 #textcard3 {
-    color: white;
+    color: rgb(231, 59, 59);
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
-    margin-top: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtextcard3 {
+    color: #000;
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 25px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    width: 180px;
 }
 
 #card4 {
-    background: url('lveenews-18.jpg');
+    background: #fff;
     background-size: cover;
     transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    padding-bottom: 15px;
 }
 
 #card4:hover {
@@ -2742,20 +2781,30 @@ body {
 }
 
 #textcard4 {
-    color: white;
+    color: rgb(231, 59, 59);
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
-    margin-top: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtextcard4 {
+    color: #000;
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 25px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    width: 320px;
+    height: 70px;
 }
 
 #card5 {
-    background: url('lveenews-19.jpg');
+    background: #fff;
     background-size: cover;
     transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    padding-bottom: 15px;
 }
 
 #card5:hover {
@@ -2763,19 +2812,27 @@ body {
 }
 
 #textcard5 {
-    color: white;
+    color: rgb(231, 59, 59);
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
-    margin-top: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtextcard5 {
+    color: #000;
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 25px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    width: 320px;
+    height: 70px;
 }
 
 #matbtn {
     font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 8px;
     position: absolute;
     bottom: 1%;
@@ -2793,7 +2850,7 @@ body {
 
 #matbtn2 {
     font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 8px;
     position: relative;
     margin-top: 5%;
@@ -2829,7 +2886,7 @@ body {
     font-size: 50pt;
     color: #e73b3b;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #prevcard1 {
@@ -2871,7 +2928,7 @@ body {
 
 #matbtn3 {
     font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 8px;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -2917,7 +2974,7 @@ body {
     font-size: 50pt;
     color: #e73b3b;
     font-weight: 900;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sposcontainer {
@@ -3194,5 +3251,201 @@ a:link {
     .carouselinfopartners
     {
         height: 150px !important;
+    }
+}
+
+@media (max-width: 1565px) and (min-width: 1334px){
+    #pic1
+    {
+        height: 300px !important;
+    }
+    #pic2
+    {
+        height: 300px !important;
+    }
+    #pic3
+    {
+        height: 300px !important;
+    }
+    
+
+}
+
+@media(max-width: 1608px) and (min-width: 1362px){
+    #card1
+    {
+        height: 520px;
+    }
+    #card2
+    {
+        height: 520px;
+    }
+    #card3
+    {
+        height: 520px;
+    }
+}
+
+@media (max-width: 1361px) and (min-width: 1121px){
+    #pic1
+    {
+        height: 260px !important;
+    }
+    #pic2
+    {
+        height: 260px !important;
+    }
+    #pic3
+    {
+        height: 260px !important;
+    }
+    #card1
+    {
+        height: 575px;
+    }
+    #card2
+    {
+        height: 575px;
+    }
+    #card3
+    {
+        height: 575px;
+    }
+}
+
+@media (max-width: 1120px) and (min-width: 1085px)
+{
+    #card2
+    {
+        height: 571px !important;
+    }
+}
+
+@media (max-width: 1084px) and (min-width: 913px){
+    #card2
+    {
+        height: 591px !important;
+    }
+}
+
+@media (max-width: 912px) and (min-width: 898px){
+    #card2
+    {
+        height: 619px !important;
+    }
+}
+
+@media (max-width: 897px) and (min-width: 871px){
+    #card2
+    {
+        height: 639px !important;
+    }
+}
+
+@media (max-width: 870px) and (min-width: 747px){
+    #card2
+    {
+        height: 667px !important;
+    }
+}
+
+@media (max-width: 746px) and (min-width: 741px){
+    #card2
+    {
+        height: 687px !important;
+    }
+}
+
+@media (max-width: 740px) and (min-width: 472px){
+    #textcard1
+    {
+        font-size: 14pt !important;
+    }
+    #textcard2
+    {
+        font-size: 14pt !important;
+    }
+    #textcard3
+    {
+        font-size: 14pt !important;
+    }
+}
+
+@media (max-width: 592px) and (min-width: 390px){
+    #pic1
+    {
+        height: 240px !important;
+    }
+    #pic2
+    {
+        height: 240px !important;
+    }
+    #pic3
+    {
+        height: 240px !important;
+    }
+}
+
+@media (max-width: 389px) and (min-width: 50px){
+    #pic1
+    {
+        height: 140px !important;
+    }
+    #subtextcard1
+    {
+        font-size: 10pt !important;
+    }
+    #pic2
+    {
+        height: 140px !important;
+    }
+    #subtextcard2
+    {
+        font-size: 10pt !important;
+    }
+    #pic3
+    {
+        height: 140px !important;
+    }
+    #subtextcard3
+    {
+        font-size: 10pt !important;
+    }
+}
+
+@media (min-width: 1346px){
+    #textcard2
+    {
+        height: 112px !important;
+    }
+    #textcard3
+    {
+        height: 112px !important;
+    }
+}
+
+@media (min-width: 1609px) and (max-width: 1880px){
+    #card1
+    {
+        height: 560px;
+    }
+    #card2
+    {
+        height: 560px;
+    }
+    #card3
+    {
+        height: 560px;
+    }
+}
+
+@media (max-width: 1078px) and (min-width: 721px){
+    #subtextcard4
+    {
+        height: 120px !important;
+    }
+    #subtextcard5
+    {
+        height: 120px !important;
     }
 }
