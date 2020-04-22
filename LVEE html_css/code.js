@@ -69,6 +69,31 @@ function openpartitemslist()
 
 }
 
+function openmaterialitemslist(ID)
+{
+    
+    if(isSponsOpened == false)
+    {
+        $(document).ready(function(){
+            $("#iconarrow2").toggleClass("rotate180");
+            $("#"+ID).stop().slideToggle(300);
+        });
+        document.getElementById("#"+ID).style.display = "block";
+        isSponsOpened = true;
+    }
+    else if (isSponsOpened == true)
+    {
+        $(document).ready(function(){
+            $("#iconarrow2").toggleClass("rotate180");
+            $("#"+ID).stop().slideToggle(300);
+        });
+        isSponsOpened = false;
+    }
+
+}
+
+
+
 function opensponsitemslist()
 {
 
