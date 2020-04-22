@@ -139,10 +139,11 @@ h5 {
     transition: all 0.5s ease;
     vertical-align: middle;
     float: right;
+    transform: rotate(180deg);
 }
 
 .rotate180 {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 @media (min-width:646px) and (max-width:769px) {

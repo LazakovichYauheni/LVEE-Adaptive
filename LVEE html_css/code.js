@@ -69,13 +69,13 @@ function openpartitemslist()
 
 }
 
-function openmaterialitemslist(ID)
+function openmaterialitemslist(ID,icon)
 {
     
     if(isSponsOpened == false)
     {
         $(document).ready(function(){
-            $("#iconarrow2").toggleClass("rotate180");
+            $("#"+icon).toggleClass("rotate180");
             $("#"+ID).stop().slideToggle(300);
         });
         document.getElementById("#"+ID).style.display = "block";
@@ -84,7 +84,7 @@ function openmaterialitemslist(ID)
     else if (isSponsOpened == true)
     {
         $(document).ready(function(){
-            $("#iconarrow2").toggleClass("rotate180");
+            $("#"+icon).toggleClass("rotate180");
             $("#"+ID).stop().slideToggle(300);
         });
         isSponsOpened = false;
