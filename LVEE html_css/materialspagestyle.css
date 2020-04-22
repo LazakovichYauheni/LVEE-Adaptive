@@ -163,6 +163,16 @@ h5 {
     }
 }
 
+@media (min-width: 646px) {
+    .materialitemslist {
+        display: block;
+    }
+    #mobiletable{
+        margin-left:6%;
+        margin-right:6%;
+    }
+}
+
 @media (max-width: 375px) {
     .h5materialsstyle{
         font-size: 12pt !important;
