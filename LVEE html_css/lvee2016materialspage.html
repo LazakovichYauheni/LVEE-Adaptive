@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Presentations</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="materialspagestyle.css">
+    <link rel="stylesheet" href="animation/Animate.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="node_modules/getmdl-select/getmdl-select.min.css">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="mdl_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script defer src="node_modules/getmdl-select/getmdl-select.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="node_modules/materialize/dist/js/materialize.min.js"></script>
+    <script src="animation/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="menu" style="position: unset !important; background-color: #202020 !important;" id="menu">
+        <button onclick="openNav()" style=" z-index:800; background-color: #202020; border-color: transparent; margin-left:2%; top:50%; cursor: pointer;outline: none;">
+            <a class="materialcolor">
+                <i class="material-icons" id="btbt">
+                    menu
+                </i>
+            </a>
+        </button>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="material-icons" style="font-size:40px;">close</i>
+        </a>
+         
+        <div class="menutitlecontainer">
+            <div style="width:55%; float: left;">
+                <h1 class="menutitle">LVEE</h1>
+            </div>
+            <div class="imagecontainer" style="width: 43%; float: right;">
+                <a href="https://facebook.com" class="facebook">
+                    <img src='icons8-facebookRed.png' class="facebookimg" style="width: 45px; padding-right: 5%;"></img>
+                </a>
+                <a href="https://twitter.com" class="twitter">
+                    <img src='icons8-twitterRed.png' class="twitterimg" style="width: 50px; padding-right: 5%;"></img>
+                </a>
+                <a href="https://vk.com" class="vk">
+                    <img src='icons8-vkRed.png' class="vkimg" style="width: 50px;"></img>
+                </a>
+            </div>
+        </div>
+
+        <div id="desktopnav">
+            <div style="overflow: auto; width: 50%; float: left;">
+                <div class="presenttitlecontainer">
+                    <h3 class="presenttitle">PRESENTATIONS</h3>
+                </div>
+                <div class="h6stylecontainer">
+                    <h6 class="h6style">Programme</h6>
+                    <h6 class="h6style">On Presentations</h6>
+                    <h6 class="h6style">Abstract Guidelines</h6>
+                    <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                    <h6 class="h6style">LVEE 2017</h6>
+                    <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                    <a style="text-decoration: unset; color: unset; font-weight: unset;" href="morepage.html">
+                        <h6 class="h6style">More</h6>
+                    </a>
+                </div>
+                <div class="sponstitlecontainer">
+                    <h3 class="sponstitle">SPONSORS</h3>
+                </div>
+                <div class="h6stylecontainer">
+                    <h6 class="h6style">Technical sponsors</h6>
+                    <h6 class="h6style">Information partners</h6>
+                    <h6 class="h6style">Technical partners</h6>
+                </div>
+            </div>
+            <div style="overflow: auto; width: 45%; float: right; padding-left: 20px;">
+                <div class="contacttitlecontainer">
+                    <h3 class="contacttitle">CONTACTS</h3>
+                </div>
+                <div class="h6contactstylecontainer">
+                    <h6 class="h6contactstyle">Official Contacts</h6>
+                    <h6 class="h6contactstyle">Organisers</h6>
+                    <h6 class="h6contactstyle">LUG</h6>
+                </div>
+                <div class="parttitlecontainer">
+                    <h3 class="parttitle">PARTICIPANTS</h3>
+                </div>
+                <div class="h6contactstylecontainer">
+                    <h6 class="h6contactstyle">Personal Profile</h6>
+                    <h6 class="h6contactstyle">List</h6>
+                    <h6 class="h6contactstyle">Wiki</h6>
+                    <h6 class="h6contactstyle">Volunteers</h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobilenav">
+            <div>
+                <div class="presenttitlecontainer" onclick="openitemslist()">
+                    <h3 class="presenttitle">PRESENTATIONS</h3>
+                </div>
+                <ul id="itemslist">
+                    <div class="h6stylecontainer">
+                        <h6 class="h6style">Programme</h6>
+                        <h6 class="h6style">On Presentations</h6>
+                        <h6 class="h6style">Abstract Guidelines</h6>
+                        <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                        <h6 class="h6style">LVEE 2017</h6>
+                        <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                        <h6 class="h6style"><a style="text-decoration: unset; color: unset; font-weight: unset;" href="morepage.html">More</a></h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="contacttitlecontainer" onclick="opencontactitemslist()">
+                    <h3 class="contacttitle">CONTACTS</h3>
+                </div>
+                <ul id="itemscontactlist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Official Contacts</h6>
+                        <h6 class="h6contactstyle">Organisers</h6>
+                        <h6 class="h6contactstyle">LUG</h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="parttitlecontainer" onclick="openpartitemslist()">
+                    <h3 class="parttitle">PARTICIPANTS</h3>
+                </div>
+                <ul id="itemspartlist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Personal Profile</h6>
+                        <h6 class="h6contactstyle">List</h6>
+                        <h6 class="h6contactstyle">Wiki</h6>
+                        <h6 class="h6contactstyle">Volunteers</h6>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <div class="sponstitlecontainer" onclick="opensponsitemslist()">
+                    <h3 class="sponstitle">SPONSORS</h3>
+                </div>
+                <ul id="itemssponslist">
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Technical sponsors</h6>
+                        <h6 class="h6contactstyle">Information partners</h6>
+                        <h6 class="h6contactstyle">Technical partners</h6>
+                    </div>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <div id="titlecontainer">
+        <h1 id="title">LVEE 2016 Materials</h1>
+    </div>
+    <table id="table" style="display: none;">
+            <thead style="text-align: center;">
+                <tr>
+                    <th id="headoftable">Talk</th>
+                    <th id="headoftable">Speaker</th>
+                    <th id="headoftable" class="status">View</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/238">Multi-layered and multi-tier storage systems</a>
+                    </th>
+                    <th class="bodytable speaker">
+                        <h5>Alyaksandr Klyga</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5> 
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/458/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B9%D0%BD%D1%8B%D0%B5_%D0%B8_%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B_%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_ver_2-2.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/240">Typical mistakes when
+                        submitting a new code 
+                        to Linux kernel</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Andy Shevchenko</h5>
+                        <h5><img src="16/Finland.png"> Espoo, Finland</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/457/Typical_mistakes_when_submitting_a_new_code_to_Linux_kernel_FINAL.pdf">
+                            Slides
+                        </a>    
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/241">Make your own 
+                        USB gadget</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Andrzej Pietrasiewicz</h5>
+                        <h5><img src="16/Poland.png"> Warsaw, Poland</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.by/uploads/image_upload/file/461/make-your-own-usb-gadget.pdf">
+                            Slides
+                        </a>    
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/253">Абмеркаванне адкрытых бізнэс-мадэляў на аснове лічбавага агульнага (the commons) – a round table</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Mikhail Volchak</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/242">Картографический сервис на OpenSource – доступная картография каждому</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Dmitry Stepanov</h5>
+                        <h5><img src="16/Belarus.png"> Minsk,Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial">Ansible, Molecule and Everything. How to stop building a special snowflakes in your infrastructure</th>
+                    <th class="bodytable speaker">
+                        <h5>Aliaksandr Kharkevich</h5>
+                        <h5><img src="16/Belarus.png"> Gomel, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/244">Hubzilla – введение, возможности, Hubzilla-сообщество</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Gustav Wall</h5>
+                        <h5><img src="16/Germany.png"> Germany, Oldenburg(Oldb)</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/452/hubzill_pitch_ru-2017-06-24.pdf">
+                            Slides
+                        </a>    
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/249">Безопасность в браузерах: альтернативы SSL</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Алексей Хлебников</h5>
+                        <h5><img src="16/Norway.png"> Norway, Oslo</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/448/Alexei_Khlebnikov.Browser_Security.Alternatives_To_SSL.2017-06-20.pdf">
+                            Slides
+                        </a>  
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/258">The Invisible Internet Project</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Andrew Savchenko</h5>
+                        <h5><img src="16/Russia.png"> Russian Federation, Moscow</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/455/savchenko-i2p.pdf">
+                            Slides
+                        </a>  
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/251">Эльбрус на альте</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Михаил Шигорин</h5>
+                        <h5><img src="16/Russia.png"> Russian Federation, Москва</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/456/shigorin-alt-e2k.pdf">
+                            Slides
+                        </a>  
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/243">USB attacks explained</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Krzysztof Opasiak</h5>
+                        <h5><img src="16/Poland.png"> Poland, Warsaw</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/245">Электромиографическое распознавание движений пальцев руки человека на базе Arduino</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Вадим Шамонин</h5>
+                        <h5><img src="16/Belarus.png"> Brest, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/454/LVEE_2017.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/255">Практическое использование сервисов контейнеризации в облаке Амазон</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Andrew Rewoonenco</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/449/AWS_container_services_problems_and_solutions.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/248">Выкарыстанне вольнага праграмнага забеспячэння ў ЛНУ імя Івана Франка і ЛНМУ імя Данііла Галіцкага</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Григорій Злобін</h5>
+                        <h5><img src="16/Ukraine.png"> Ukraine, Ľviv</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/450/dop_lvee_2017.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr"> 
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/246">Taurus: тесты на любителя</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Taras Svirinovski</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/250">Основы IPv6</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Иван Семерник</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/239">Адкрытыя графічныя прылады Gimp і InkScape. Плюсы і мінусы</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Святлана Ермаковіч</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/451/Gimp_%D1%96_InkScape._LVEE_2017.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/256">LibreOffice: как разрабатываются большие проекты?</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Василий Меленчук</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/453/lvee2017__-_libreoffice.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/252">Превращение Android-устройств в мобильные серверы при помощи FOSS</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Виталий Сороко</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/459/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_LVEE_final_2.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial"><a style="font-weight: unset; color: unset; text-decoration: unset;" href="https://lvee.org/ru/abstracts/257">Использование открытых исходных кодов для разработки 3D сканера и соответствующего программного обеспечения для 3D реконструкции моделей</a></th>
+                    <th class="bodytable speaker">
+                        <h5>Лина Ширяева</h5>
+                        <h5><img src="16/Belarus.png"> Minsk, Belarus</h5>
+                    </th>
+                    <th class="bodytable slides">
+                        <a style="font-weight:unset; color:unset; text-decoration: unset;" href="https://lvee.org/uploads/image_upload/file/447/3D_scanner_Shiryaeva_Lina_LVEE_2017.pdf">
+                            Slides
+                        </a>
+                    </th>
+                    <th class="bodytable">
+                        <div style="clear: both;">
+                            ICON
+                        </div>
+                    </th>
+                </tr>
+                <tr class="bodytr">
+                    <th class="bodytable nameofmaterial">Percona Monitoring and Management Architecture</th>
+                    <th class="bodytable speaker">
+                        <h5>Mykola Marzhan</h5>
+                        <h5><img src="16/Ukraine.png"> Ukraine, Kyiv</h5>
+                    </th>
+                    <th class="bodytable slides">Lecture</th>
+                    <th class="bodytable">
+                    </th>
+                </tr>
+            </tbody>
+    </table>
+
+    <div id="mobiletable" style="display: block;">
+        <div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('1st','iconarrow2')">
+                    <h5 class="h5materialsstyle">Vitaly Shukela</h5>
+                    <h3 class="materialtitle">Введение в ЯП Rust. Ключевые принципы и инженерные идеи</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow2">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="1st">
+                        <h6>Core ideas, features, engineering ideas, pros and cons of Mozilla's Rust programming language.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/238">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('2nd','iconarrow3')">
+                    <h5 class="h5materialsstyle">Alexandr Sorokin</h5>
+                    <h3 class="materialtitle">Как я собирал аркадный автомат</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow3">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="2nd">
+                    <h6>Experience share of building the bartop arcade cabinet from ground up, based on open source technologies.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/240">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('3th','iconarrow4')">
+                    <h5 class="h5materialsstyle">Taras Svirinovski</h5>
+                    <h3 class="materialtitle">codename: Taurus</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Мінск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow4">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="3th">
+                    <h6>Taurus is automation-friendly framework for Load Testing.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/241">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('4th','iconarrow5')">
+                    <h5 class="h5materialsstyle">Дмитрий Храбров</h5>
+                    <h3 class="materialtitle">Написание своей StdLibC</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Homel, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow5">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="4th">
+                    <h6>This article shows how you can implement basic stdlib's functions. You can see here: string functions, formatted output, usage of *Nix kernel functions etc.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/253">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">    
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('5th','iconarrow6')">
+                    <h5 class="h5materialsstyle">Дмитрий Степанов</h5>
+                    <h3 class="materialtitle">Параноидальный офис – оборотная сторона безопасности</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow6">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="5th">
+                    <h6>News about data breaches, hacking, discovered vulnerabilities are now typical. Common solutions deal with external threats along with international standards and best practices, not taking into account non-commercial threats of information leaks.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/242">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('6th','iconarrow7')">
+                    <h5 class="h5materialsstyle">Denis Pynkin</h5>
+                    <h3 class="materialtitle">Доклад на тему LXD</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow7">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="6th">
+                    <h6></h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            ABSTRACTS
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">      
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('7th','iconarrow8')">
+                    <h5 class="h5materialsstyle">Александр Клыга</h5>
+                    <h3 class="materialtitle">Enterprise Storage OS</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow8">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="7th">
+                    <h6>The Enterprise Storage OS (ESOS) is open-source software to build the Data Storages System within the SAN model. The ESOS is a compact Linux distribution and it is distributed under a GPL license. In my presentation the main components of the ESOS are considered including a loading method and the Data Storages System architecture.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/244">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('8th','iconarrow9')">
+                    <h5 class="h5materialsstyle">Александр Клыга</h5>
+                    <h3 class="materialtitle">Основные тенденции развития объектного хранилища данных Ceph</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow9">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="8th">
+                    <h6>The new criteria of development of the distributed object data storage Ceph in addition to description of its basic components and their interaction with the Linux kernel will be presented. An interface between Ceph and ESOS in Data Storages System will be discussed as well.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/249">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('9th','iconarrow10')">
+                    <h5 class="h5materialsstyle">Тимофей Пирожник</h5>
+                    <h3 class="materialtitle">Система мониторинга ZaBBix</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow10">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="9th">
+                    <h6>With the development of infrastructure and the addition of services (third party products) it becomes too difficult or even impossible to keep track of the current state of systems and services. The most correct response on such challenge is to use the monitoring system. Zabbix project is a free/libre solution for such a task.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/258">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('10th','iconarrow11')">
+                    <h5 class="h5materialsstyle">Антон Новиков</h5>
+                    <h3 class="materialtitle">Миграция виртуальной инфраструктуры на свободное ПО XenServer</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Мінск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow11">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="10th">
+                    <h6>Migrate virtual infrastructure to open source XenServer. Real, complete project.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/251">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('11th','iconarrow12')">
+                    <h5 class="h5materialsstyle">Andrei Perapiolkin</h5>
+                    <h3 class="materialtitle">First steps into OpenStack</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Мінск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow12">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="11th">
+                    <h6>This report aims to give understanding of what OpenStack is, moreover to guide on how to start to use and contribute to the OpenStack. I will describe OpenStack in the context of distributed computing; give short description of OpenStack services Nova, Neutron, Cinder, Swift, Glance, Horisont, Keystone; give short description of devstack, packstack, suseCloud, ubuntu juju.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/243">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('12th','iconarrow13')">
+                    <h5 class="h5materialsstyle">Andrew Savchenko</h5>
+                    <h3 class="materialtitle">Hidden powers of screen and xterm: multiple windows inside of a terminal</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow13">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="12th">
+                    <h6>Xterm and screen are both well known software, but they are more powerful than they look like at a first glance. This talk reveals some of their not so widely used features which may increase productivity, improve user experience or are just fun. Some problems and their solutions are also discussed.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/245">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('13th','iconarrow14')">
+                    <h5 class="h5materialsstyle">Антон Літвіненка</h5>
+                    <h3 class="materialtitle">Разглядывая атомы. Программное обеспечение для визуализации химического строения вещества</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Ukraine.png"> Kyiv, Ukraine <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow14">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="13th">
+                    <h6>Brief review of main types and uses of software for chemical structures visualization is presented in this abstract. Current situation with free chemical visualization software as well as some actual tasks and problems in chemical structure analysis are discussed.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('14th','iconarrow15')">
+                    <h5 class="h5materialsstyle">Michael Shigorin</h5>
+                    <h3 class="materialtitle">Восьмая платформа BaseALT</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow15">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="14th">
+                    <h6>BaseALT p8 Platform has been released Summer 2016 following the three-years-old ALT Linux p7 Platform; let's look into the news of the release and the corresponding distributions with spins including starterkits, ALT Workstation, and Education.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/248">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('15th','iconarrow16')">
+                    <h5 class="h5materialsstyle">Dmitry Levin</h5>
+                    <h3 class="materialtitle">strace</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Russian Federation, Москва <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow16">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="15th">
+                    <h6>strace is a diagnostic, debugging and instructional userspace utility for monitoring interactions between processes and the Linux kernel, which include system calls, signal deliveries, and changes of process state. This paper gives an overview of strace development, lists the most noteworthy changes made in recent releases and the new features currently being worked on.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/246">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('16th','iconarrow17')">
+                    <h5 class="h5materialsstyle">Sergey Derevyago</h5>
+                    <h3 class="materialtitle">Криптографический алгоритм DersCrypt</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Мінск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow17">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="16th">
+                    <h6>An original block symmetric cryptography algorithm DersCrypt is presented. Specifics of implementation is discussed, as far as reference and production implementations.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/250">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('17th','iconarrow18')">
+                    <h5 class="h5materialsstyle">Иван Ларионов</h5>
+                    <h3 class="materialtitle">Пастильда – открытый аппаратный менеджер паролей</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Санкт-Петербург, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow18">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="17th">
+                    <h6>Pastilda - simple and cheap opensource device that allows a hardware safekeeping and entering usernames/passwords on all types of devices</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/239">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('18th','iconarrow19')">
+                    <h5 class="h5materialsstyle">Yury Andreev</h5>
+                    <h3 class="materialtitle">Обобщенные деревья поиска</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> St. Petersburg, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow19">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="18th">
+                    <h6>This report describes the Generalized Search Tree (GiST), an index structure, which allows new data types to be indexed in a manner supporting queries natural to the types.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/256">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('19th','iconarrow20')">
+                    <h5 class="h5materialsstyle">Сергей Рогачев</h5>
+                    <h3 class="materialtitle">Технология прозрачного сжатия графической памяти GPU</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow20">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="19th">
+                    <h6>Complexity of graphical user interfaces of mobile applications is growing rapidly. Much memory is needed to keep buffers for textures and graphical data. Modern mobile GPUs do not have built-in memory and use general memory to keep graphic buffers. A part of RAM is occupied by GPU and cannot be used by an operating system.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/252">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('20th','iconarrow21')">
+                    <h5 class="h5materialsstyle">Ирина Радченко</h5>
+                    <h3 class="materialtitle">Связанные открытые данные в университете</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Санкт-Петербург, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow21">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="20th">
+                    <h6>LinkedUniversities.org is one of important projects in the field of Linked Open Data in European universities. ITMO University joined linked open data in universities initiative in 2014. ISST Labs is an organization responsible for developing LOD-IFMO project. I am going to give a talk on project progress and outcomes.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/257">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('21th','iconarrow22')">
+                    <h5 class="h5materialsstyle">Alex Chistyakov</h5>
+                    <h3 class="materialtitle">Using Hadoop stack to build a cloud VAT declarations revising service</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Saint-Petersburg, Russian Federation <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow22">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="21th" >
+                    <h6>Recent changes in Russian federal law require organizations to submit tax information in electronic form. Federal Tax Service of Russia revises this information and sends automatically generated claims. “Kontur.NDS+” project helps businesses to perform this revising in the cloud before tax documents are submitted to the Federal Tax Service.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        ABSTRACTS
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('22th','iconarrow23')">
+                    <h5 class="h5materialsstyle">Андрэй Захарэвіч</h5>
+                    <h3 class="materialtitle">Досвед апрацоўкі відэа з дакладаў ці лекцый з дапамогай kdenlive</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Belarus, Minsk <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow23">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="22th" >
+                    <h6>This thesis contains some background ideas for my workshop. Workshop will demonstrates one of the ways of video processing some content from presentations, lectures and so one using Kdenlive, the open-source multitrack video editor.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        ABSTRACTS
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="titlecontainer">
+        <h1 id="title">LVEE 2016 Winter Materials</h1>
+    </div>
+    <div id="mobiletable" style="display: block;">
+        <div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('23th','iconarrow24')">
+                    <h5 class="h5materialsstyle">Андрэй Захарэвіч</h5>
+                    <h3 class="materialtitle">Свой уласны Dropbox, з календаром, кантактамі і RSS</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Мінск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow24">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="23th">
+                        <h6>THIS IS A TRUE STORY. At the request of the survivors, the names have been changed. Out of respect for the dead, the rest has been told exactly as it occurred. This is a story of attempt to get some open source and provider independent solutions for some task we usually allow to perform companies and corporations like Dropbox Inc or Google Inc.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/238">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('24th','iconarrow25')">
+                    <h5 class="h5materialsstyle">Александр Клыга</h5>
+                    <h3 class="materialtitle">Обзор решений на рынке открытого ПО для создания СХД</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Minsk, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow25">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="24th">
+                    <h6>The survey of possible data storage solutions based on Open Source programs is presented. We focus on the ZFS file system and available solutions for data storage within the direct-attached storage model. In addition, solutions to form data storage by using network-attached storage and storage area networks are outlined.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/240">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('25th','iconarrow26')">
+                    <h5 class="h5materialsstyle">Aliaksandr Kharkevich</h5>
+                    <h3 class="materialtitle">Как перестать страдать* и начать использовать Let’s Encrypt</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Минск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow26">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="25th">
+                    <h6>This article describes several types of SSL certificates, CA with issuing certificates for free, ACME protocol and Let's Encrypt as Certificate Authority.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/241">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('26th','iconarrow27')">
+                    <h5 class="h5materialsstyle">Алексей Хлебников</h5>
+                    <h3 class="materialtitle">Comparative Review of FLOSS Testing Frameworks for Embedded C++</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Norway.png"> Oslo, Norway <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow27">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="26th">
+                    <h6>Every software development group tests its products, yet delivered software always has defects. Test engineers strive to catch them before the product is released but they always creep in and they often reappear, even with the best manual testing processes. Automated tests is the best way to increase the effectiveness, efficiency and coverage of your software testing.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/253">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">    
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('27th','iconarrow28')">
+                    <h5 class="h5materialsstyle">Vadim Zhukov</h5>
+                    <h3 class="materialtitle">OpenBSD изнутри</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Russian Federation, Москва <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow28">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="27th">
+                    <h6>The article would bring some light to the dark side of OpenBSD development process. You will know better: 1) about OpenBSD developers hierarchy; 2) what formal and informal rules are used in development process; 3) how OpenBSD development is sponsored nowadays; 4) what OpenBSD team building events AKA hackathons do look like; 5) how Ted Unangst became a verb; 6) and, finally, why do OpenBSD developers hate Australia.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/242">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('28th','iconarrow29')">
+                    <h5 class="h5materialsstyle">Vadim Zhukov</h5>
+                    <h3 class="materialtitle">OpenBSD 5.8 & 5.9</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Russian Federation, Moscow <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow29">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="28th">
+                    <h6>At the time of LVEE Winter, the OpenBSD repositories will be in pre-release lock, so it's a perfect time to take a deep look at changes happened. In particular: a) pledge(2): simple tool for improving security of your own programs; b) cloud-ready OpenBSD: native OpenBSD hypervisor, Xen support, improvements in service management; c) new oldies: file(1), doas(1); d) UTF-8 support for everybody.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            ABSTRACTS
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">      
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('29th','iconarrow30')">
+                    <h5 class="h5materialsstyle">Andrew Shadura</h5>
+                    <h3 class="materialtitle">Yocto and OpenEmbedded at Collabora</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Slovakia.png"> Slovakia, Bratislava <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow30">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="29th">
+                    <h6>How the use of Yocto and OpenEmbedded helps corporations migrate to free software</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/244">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('30th','iconarrow31')">
+                    <h5 class="h5materialsstyle">Andrew Savchenko</h5>
+                    <h3 class="materialtitle">An introduction to post-quantum cryptography</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow31">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="30th">
+                    <h6>These days cryptography faces a new type of threat: quantum computing. An overview of quantum computing and how it works in the context of cryptography is presented. It is discussed when it is dangerous and when it is not for commonly used algorithms. There are well known, but not commonly used algorithms, which are resilient to the quantum computing approach and free software is available to use them in a manner similar to GnuPG.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/249">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('31th','iconarrow32')">
+                    <h5 class="h5materialsstyle">Dmitry Sklipus</h5>
+                    <h3 class="materialtitle">Создание робота для Roborace</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Брест, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow32">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="31th">
+                    <h6>Author shares his development experience of Arduino-based robots targeted at Roborace competitions. Specifics of the competition is explained as far as some details of the hardware platform and the contol algorythm.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/258">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('32th','iconarrow33')">
+                    <h5 class="h5materialsstyle">Виталий Сороко</h5>
+                    <h3 class="materialtitle">Использование архитектуры EAV в opensource-проектах</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Гродно, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow33">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="32th">
+                    <h6>Entity–attribute–value model (EAV) is a very flexible data model used in various open source projects. This data model has many advantages and disadvantages so it is not suitable for wide application. But sometimes it is highly recommended to use EAV in design and development process. Cases are decribed, in which it is preferable to use EAV data model.</h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/251">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('33th','iconarrow34')">
+                    <h5 class="h5materialsstyle">Aleksey Cheusov</h5>
+                    <h3 class="materialtitle">herisvm – tools for evaluation of classification models (machine learning)</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Минск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow34">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="33th">
+                    <h6></h6>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/243">
+                                ABSTRACTS
+                            </a>
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            SLIDES
+                        </button>
+                        <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                            VIDEO
+                        </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('34th','iconarrow35')">
+                    <h5 class="h5materialsstyle">Arseny Meshkov, Антон Уймин</h5>
+                    <h3 class="materialtitle">Опыт использования СПО в учебном процессе УРТК им. А.С. Попова</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Yekaterinburg, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow35">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="34th">
+                    <h6>The article describes experience of adopting free software in a secondary vocational educational institution - a college. List of profession specialties and specialized classrooms that use free software is presented. Advantages and disadvantages of using free software in the educational process are discussed.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/245">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('35th','iconarrow36')">
+                    <h5 class="h5materialsstyle">Александра Кононова</h5>
+                    <h3 class="materialtitle">Практическая индивидуальная настройка клавиатуры в GNU/Linux</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Зеленоград, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow36">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="35th">
+                    <h6>xkb (X Keyboard Extension) possibilities are not limited to keyboard layout selection and switching from predefined list. With xkb it is possible to create custom layouts with necessary symbols and modifiers, assign up to 8 symbols to a single key. It is also possible to set up non-cyclic layouts switching, re-assign keys of auxiliary keyboards (e. g. gaming mouse keyboard), change layouts on-the-fly, combine symbol entry and layout switch in one key, etc.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('36th','iconarrow37')">
+                    <h5 class="h5materialsstyle">Yauhen Kharuzhy</h5>
+                    <h3 class="materialtitle">Что такое SMR-диски и как их готовить</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Минск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow37">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="36th">
+                    <h6>Brief review of Shingled Magnetic Recording (SMR) drives and status of their support in Linux is presented including projects which are currently in development supported by Seagate and HGST companies.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('37th','iconarrow38')">
+                    <h5 class="h5materialsstyle">Michael Shigorin</h5>
+                    <h3 class="materialtitle">Альт на Эльбрусе</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow38">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="37th">
+                    <h6>As soon as we've got a shell on Elbrus processor we wanted to port our RPM there; upon that, it was only natural to want hasher working too. The availability of a physical system didn't hurt at all.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('38th','iconarrow39')">
+                    <h5 class="h5materialsstyle">Ivan Zakharyaschev</h5>
+                    <h3 class="materialtitle">c_uglify – семантический фильтр GNU C для компиляции программ с помощью не-GCC</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow39">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="38th">
+                    <h6>A converter of C code is presented, which overwrites some GNU extensions, making it possible to compile gcc-oriented FOSS software with othe compilers - clang, etc. Converter is based on "language-c":http://hackage.haskell.org/package/language-c Haskell library.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('39th','iconarrow40')">
+                    <h5 class="h5materialsstyle">Anzhelika Sakhipgareeva</h5>
+                    <h3 class="materialtitle">Ключевые риски, связанные с использованием свободных лицензий</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Russia.png"> Moscow, Russia <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow40">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="39th">
+                    <h6>The article is about risks associated with the use of free software in the company or in the development of its own software products.</h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+            <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; margin-bottom: 30px;">  
+                <div class="materialtitlecontainer" onclick="openmaterialitemslist('40th','iconarrow41')">
+                    <h5 class="h5materialsstyle">Aliaksandr Kharkevich</h5>
+                    <h3 class="materialtitle">Облачный офис: ONLYOFFICE document server, etc. (workshop)</h3>
+                    <div style="width: 100%;">
+                        <div class="h6contactstylecontainer" style="width: 100%;">
+                            <h5 class="h5materialsstyle"><img src="16/Belarus.png"> Минск, Belarus <i class="mdl-icon-toggle__label material-icons iconarrow2" id="iconarrow41">keyboard_arrow_down</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <ul class="materialitemslist" id="40th">
+                    <h6></h6>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
+                            ABSTRACTS
+                        </a>
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        SLIDES
+                    </button>
+                    <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
+                        VIDEO
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
