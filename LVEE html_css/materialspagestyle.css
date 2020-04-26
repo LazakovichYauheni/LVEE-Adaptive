@@ -212,3 +212,76 @@ h5 {
         font-size: 14pt !important;
     }
 }
+
+@media (min-width: 1426px) {
+    .nameclass {
+        width: 83% !important;
+    }
+}
+@media (min-width: 1070px) and (max-width: 1425px) {
+    .nameclass {
+        width: 79% !important;
+    }
+}
+@media (min-width: 858px) and (max-width: 1069px) {
+    .nameclass {
+        width: 70% !important;
+    }
+}
+@media (min-width: 594px) and (max-width: 857px) {
+    .nameclass {
+        width: 60% !important;
+    }
+}
+@media (min-width: 452px) and (max-width: 593px) {
+    .nameclass {
+        width: 50% !important;
+    }
+    .materialtitle {
+        font-size: 13pt !important;
+    }
+    .h5materialsstyle {
+        font-size: 11pt !important;
+    }
+}
+@media (min-width: 425px) and (max-width: 451px) {
+    .nameclass {
+        width: 40% !important;
+    }
+    .materialtitle {
+        font-size: 12pt !important;
+    }
+    .h5materialsstyle {
+        font-size: 10pt !important;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .nameclass {
+        width: 50% !important;
+    }
+    .materialtitle {
+        font-size: 13pt !important;
+    }
+    .h5materialsstyle {
+        font-size: 11pt !important;
+    }
+    #photo {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+    .nameclass {
+        width: 50% !important;
+    }
+    .materialtitle {
+        font-size: 11pt !important;
+    }
+    .h5materialsstyle {
+        font-size: 9pt !important;
+    }
+    #photo {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
