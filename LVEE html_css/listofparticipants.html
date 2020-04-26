@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title>Presentations</title>
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="materialspagestyle.css">
+        <link rel="stylesheet" href="animation/Animate.css">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link rel="stylesheet" href="node_modules/getmdl-select/getmdl-select.min.css">
+        <link type="text/css" rel="stylesheet" href="node_modules/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="mdl_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script defer src="node_modules/getmdl-select/getmdl-select.min.js"></script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="code.js"></script>
+        <script type="text/javascript" src="node_modules/materialize/dist/js/materialize.min.js"></script>
+        <script src="animation/wow.min.js"></script>
+        <script> new WOW().init();</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="menu" style="position: unset !important; background-color: #202020 !important;" id="menu">
+            <button onclick="openNav()" style=" z-index:800; background-color: #202020; border-color: transparent; margin-left:2%; top:50%; cursor: pointer;outline: none;">
+                <a class="materialcolor">
+                    <i class="material-icons" id="btbt">
+                        menu
+                    </i>
+                </a>
+            </button>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="material-icons" style="font-size:40px;">close</i>
+            </a>
+             
+            <div class="menutitlecontainer">
+                <div style="width:55%; float: left;">
+                    <h1 class="menutitle">LVEE</h1>
+                </div>
+                <div class="imagecontainer" style="width: 43%; float: right;">
+                    <a href="https://facebook.com" class="facebook">
+                        <img src='icons8-facebookRed.png' class="facebookimg" style="width: 45px; padding-right: 5%;"></img>
+                    </a>
+                    <a href="https://twitter.com" class="twitter">
+                        <img src='icons8-twitterRed.png' class="twitterimg" style="width: 50px; padding-right: 5%;"></img>
+                    </a>
+                    <a href="https://vk.com" class="vk">
+                        <img src='icons8-vkRed.png' class="vkimg" style="width: 50px;"></img>
+                    </a>
+                </div>
+            </div>
+    
+            <div id="desktopnav">
+                <div style="overflow: auto; width: 50%; float: left;">
+                    <div class="presenttitlecontainer">
+                        <h3 class="presenttitle">PRESENTATIONS</h3>
+                    </div>
+                    <div class="h6stylecontainer">
+                        <h6 class="h6style">Programme</h6>
+                        <h6 class="h6style">On Presentations</h6>
+                        <h6 class="h6style">Abstract Guidelines</h6>
+                        <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                        <h6 class="h6style">LVEE 2017</h6>
+                        <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                        <a style="text-decoration: unset; color: unset; font-weight: unset;" href="morepage.html">
+                            <h6 class="h6style">More</h6>
+                        </a>
+                    </div>
+                    <div class="sponstitlecontainer">
+                        <h3 class="sponstitle">SPONSORS</h3>
+                    </div>
+                    <div class="h6stylecontainer">
+                        <h6 class="h6style">Technical sponsors</h6>
+                        <h6 class="h6style">Information partners</h6>
+                        <h6 class="h6style">Technical partners</h6>
+                    </div>
+                </div>
+                <div style="overflow: auto; width: 45%; float: right; padding-left: 20px;">
+                    <div class="contacttitlecontainer">
+                        <h3 class="contacttitle">CONTACTS</h3>
+                    </div>
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Official Contacts</h6>
+                        <h6 class="h6contactstyle">Organisers</h6>
+                        <h6 class="h6contactstyle">LUG</h6>
+                    </div>
+                    <div class="parttitlecontainer">
+                        <h3 class="parttitle">PARTICIPANTS</h3>
+                    </div>
+                    <div class="h6contactstylecontainer">
+                        <h6 class="h6contactstyle">Personal Profile</h6>
+                        <h6 class="h6contactstyle">List</h6>
+                        <h6 class="h6contactstyle">Wiki</h6>
+                        <h6 class="h6contactstyle">Volunteers</h6>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="mobilenav">
+                <div>
+                    <div class="presenttitlecontainer" onclick="openitemslist()">
+                        <h3 class="presenttitle">PRESENTATIONS</h3>
+                    </div>
+                    <ul id="itemslist">
+                        <div class="h6stylecontainer">
+                            <h6 class="h6style">Programme</h6>
+                            <h6 class="h6style">On Presentations</h6>
+                            <h6 class="h6style">Abstract Guidelines</h6>
+                            <h6 class="h6style">LVEE 2018 (with winter)</h6>
+                            <h6 class="h6style">LVEE 2017</h6>
+                            <h6 class="h6style">LVEE 2016 (with winter)</h6>
+                            <h6 class="h6style"><a style="text-decoration: unset; color: unset; font-weight: unset;" href="morepage.html">More</a></h6>
+                        </div>
+                    </ul>
+                </div>
+                <div>
+                    <div class="contacttitlecontainer" onclick="opencontactitemslist()">
+                        <h3 class="contacttitle">CONTACTS</h3>
+                    </div>
+                    <ul id="itemscontactlist">
+                        <div class="h6contactstylecontainer">
+                            <h6 class="h6contactstyle">Official Contacts</h6>
+                            <h6 class="h6contactstyle">Organisers</h6>
+                            <h6 class="h6contactstyle">LUG</h6>
+                        </div>
+                    </ul>
+                </div>
+                <div>
+                    <div class="parttitlecontainer" onclick="openpartitemslist()">
+                        <h3 class="parttitle">PARTICIPANTS</h3>
+                    </div>
+                    <ul id="itemspartlist">
+                        <div class="h6contactstylecontainer">
+                            <h6 class="h6contactstyle">Personal Profile</h6>
+                            <h6 class="h6contactstyle">List</h6>
+                            <h6 class="h6contactstyle">Wiki</h6>
+                            <h6 class="h6contactstyle">Volunteers</h6>
+                        </div>
+                    </ul>
+                </div>
+                <div>
+                    <div class="sponstitlecontainer" onclick="opensponsitemslist()">
+                        <h3 class="sponstitle">SPONSORS</h3>
+                    </div>
+                    <ul id="itemssponslist">
+                        <div class="h6contactstylecontainer">
+                            <h6 class="h6contactstyle">Technical sponsors</h6>
+                            <h6 class="h6contactstyle">Information partners</h6>
+                            <h6 class="h6contactstyle">Technical partners</h6>
+                        </div>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        <div id="titlecontainer">
+            <h1 id="title">LVEE 2019</h1>
+        </div>
+        <div id="mobiletable" style="display: block;">
+            <div>
+                <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; margin-bottom: 30px; clear: both;">
+                    <div style="overflow: hidden; border-bottom: 2px solid #DCDCDC;">
+                        <div style="width: 150px; height: 150px; float: left;">
+                            <img src="avatars/guzik.jpg" style="width: 100%;">
+                        </div>
+                        <div class="nameclass">
+                            <h3 class="materialtitle">Алесь Гузик</h3>
+                            <h5 class="h5materialsstyle">Australia, Sydney</h5>
+                        </div>
+                    </div>
+                    <div class="materialtitlecontainer" style="padding: 5%;" onclick="openmaterialitemslist('1st','iconarrow2')">
+                        <h5 class="h5materialsstyle">vkpd screenlog bash-voice-notes clfswm data_transformer fn_syntax slice microtest live-components</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; margin-bottom: 30px; clear: both;">
+                    <div style="overflow: hidden; border-bottom: 2px solid #DCDCDC;">
+                        <div style="width: 150px; height: 150px; float: left;">
+                            <img src="avatars/kharkevich1.jpg" style="width: 100%;">
+                        </div>
+                        <div class="nameclass">
+                            <h3 class="materialtitle">Alexander Kharkevich</h3>
+                            <h5 class="h5materialsstyle">Belarus, Gomel</h5>
+                        </div>
+                    </div>
+                    <div class="materialtitlecontainer" style="padding: 5%;" onclick="openmaterialitemslist('1st','iconarrow2')">
+                        <h5 class="h5materialsstyle">https://galaxy.ansible.com</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; margin-bottom: 30px; clear: both;">
+                    <div style="overflow: hidden; border-bottom: 2px solid #DCDCDC;">
+                        <div style="width: 150px; height: 150px; float: left;">
+                            <img style="width: 100%;">
+                        </div>
+                        <div class="nameclass">
+                            <h3 class="materialtitle">Irina Kharkevich</h3>
+                            <h5 class="h5materialsstyle">Belarus, Gomel</h5>
+                        </div>
+                    </div>
+                    <div class="materialtitlecontainer" style="padding: 5%;" onclick="openmaterialitemslist('1st','iconarrow2')">
+                        <h5 class="h5materialsstyle"></h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; margin-bottom: 30px; clear: both;">
+                    <div style="overflow: hidden; border-bottom: 2px solid #DCDCDC;">
+                        <div style="width: 150px; height: 150px; float: left;">
+                            <img style="width: 100%;">
+                        </div>
+                        <div class="nameclass">
+                            <h3 class="materialtitle">Andrew Pomazanskyi</h3>
+                            <h5 class="h5materialsstyle">Germany, Cologne</h5>
+                        </div>
+                    </div>
+                    <div class="materialtitlecontainer" style="padding: 5%;" onclick="openmaterialitemslist('1st','iconarrow2')">
+                        <h5 class="h5materialsstyle">We are a company actively participating in the research activities funded by the European Commission under H2020 programm. As it usually comes within the research, it is always encouraged to use or produce as part of the tangible outcomes of such research, a FOSS product. Ultimately there are advantages and disadvantages around the use of FOSS, that among others come down to the questions of continious support of the software and potential exploitation/commercial use of it. I am writing a report on the questions around policies, commercial use, benefits and disadvantages thus would be glad to attend as a Press representative (PRESS ID card is available). Thank you.</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; margin-bottom: 30px; clear: both;">
+                    <div style="overflow: hidden; border-bottom: 2px solid #DCDCDC;">
+                        <div style="width: 150px; height: 150px; float: left;">
+                            <img style="width: 100%;">
+                        </div>
+                        <div class="nameclass">
+                            <h3 class="materialtitle">Dmitry Zaitsev</h3>
+                            <h5 class="h5materialsstyle">Ukraine, Odessa</h5>
+                        </div>
+                    </div>
+                    <div class="materialtitlecontainer" style="padding: 5%;" onclick="openmaterialitemslist('1st','iconarrow2')">
+                        <h5 class="h5materialsstyle">https://github.com</h5>
+                        <h5 class="h5materialsstyle">Speed-up Solving Linear Systems on Parallel Architectures via Aggregation of Clans Доклад принят в программу конференции. Могу также провести тюториал по моделированию сетями Петри, например аналогичный https://www.eurosis.org</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -146,6 +146,36 @@ h5 {
     transform: rotate(0deg);
 }
 
+.nameclass {
+    margin-left: 10%; 
+    margin-top: 5%; 
+    float: left;
+}
+
+@media (min-width: 1144px) and (max-width: 1496px) {
+    .nameclass
+    {
+        margin-left: 5%;
+        margin-top: 2.7%;
+    }
+}
+
+@media (min-width: 866px) and (max-width: 1143px) {
+    .nameclass
+    {
+        margin-left: 5%;
+        margin-top: 3.5%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 648px) {
+    .nameclass
+    {
+        margin-left: 10%;
+        margin-top: 6.5%;
+    }
+}
+
 @media (min-width:646px) and (max-width:769px) {
     h5
     {
