@@ -134,6 +134,14 @@ h5 {
     margin-left: 7%;
     margin-right: 7%;
 }
+#mobilelisttable {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#desktoptable {
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
 .iconarrow2 {
     transition: all 0.5s ease;
@@ -147,141 +155,106 @@ h5 {
 }
 
 .nameclass {
-    margin-left: 10%; 
-    margin-top: 5%; 
+    width: calc(100% - 150px) !important;
+    float: left;
+    margin-top: unset !important;
+    margin-right: unset !important;
+}
+
+.cardcontainer {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: auto; 
+    display: flow-root; 
+    margin-bottom: 30px; 
+    clear: both;
+}
+
+.cardcontaineronclick {
+    overflow: hidden; 
+    border-bottom: 1px solid #DCDCDC;
+}
+
+#photo {
+    width: 150px; 
+    height: 150px; 
     float: left;
 }
 
-@media (min-width: 1144px) and (max-width: 1496px) {
-    .nameclass
-    {
-        margin-left: 5%;
-        margin-top: 2.7%;
-    }
-}
-
-@media (min-width: 866px) and (max-width: 1143px) {
-    .nameclass
-    {
-        margin-left: 5%;
-        margin-top: 3.5%;
-    }
-}
-
-@media (min-width: 300px) and (max-width: 648px) {
-    .nameclass
-    {
-        margin-left: 10%;
-        margin-top: 6.5%;
-    }
-}
-
-@media (min-width:646px) and (max-width:769px) {
-    h5
-    {
-        font-size: 11pt !important;
-    }
-}
-
-@media (max-width:645px) {
-    #table
+@media (max-width: 767px) {
+    #desktoptable
     {
         display: none !important;
     }
-    #mobiletable
+    #mobilelisttable
     {
         display: block !important;
     }
 }
 
-@media (min-width: 646px) {
-    .materialitemslist {
-        display: block;
+@media (max-width: 566px) {
+    #photo
+    {
+        width: 100px;
+        height: 100px;
     }
-    #mobiletable{
-        margin-left:6%;
-        margin-right:6%;
+    .listtitle
+    {
+        font-size: 13pt !important;
+    }
+    .h5listtitle
+    {
+        font-size: 11pt !important;
+    }
+    .mdl-icon-toggle__label.material-icons
+    {
+        line-height: 20px !important;
     }
 }
 
-@media (max-width: 375px) {
-    .h5materialsstyle{
-        font-size: 12pt !important;
+@media (min-width: 375px) and (max-width: 425px) {
+    #photo
+    {
+        width: 100px;
+        height: 100px;
     }
-    .materialtitle {
-        font-size: 14pt !important;
-    }
-}
-
-@media (min-width: 1426px) {
-    .nameclass {
-        width: 83% !important;
-    }
-}
-@media (min-width: 1070px) and (max-width: 1425px) {
-    .nameclass {
-        width: 79% !important;
-    }
-}
-@media (min-width: 858px) and (max-width: 1069px) {
-    .nameclass {
-        width: 70% !important;
-    }
-}
-@media (min-width: 594px) and (max-width: 857px) {
-    .nameclass {
-        width: 60% !important;
-    }
-}
-@media (min-width: 452px) and (max-width: 593px) {
-    .nameclass {
-        width: 50% !important;
-    }
-    .materialtitle {
-        font-size: 13pt !important;
-    }
-    .h5materialsstyle {
+    .listtitle
+    {
         font-size: 11pt !important;
     }
-}
-@media (min-width: 425px) and (max-width: 451px) {
-    .nameclass {
-        width: 40% !important;
-    }
-    .materialtitle {
-        font-size: 12pt !important;
-    }
-    .h5materialsstyle {
-        font-size: 10pt !important;
-    }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-    .nameclass {
-        width: 50% !important;
-    }
-    .materialtitle {
-        font-size: 13pt !important;
-    }
-    .h5materialsstyle {
-        font-size: 11pt !important;
-    }
-    #photo {
-        width: 100px !important;
-        height: 100px !important;
-    }
-}
-@media (min-width: 320px) and (max-width: 374px) {
-    .nameclass {
-        width: 50% !important;
-    }
-    .materialtitle {
-        font-size: 11pt !important;
-    }
-    .h5materialsstyle {
+    .h5listtitle
+    {
         font-size: 9pt !important;
     }
-    #photo {
-        width: 100px !important;
-        height: 100px !important;
+    .mdl-icon-toggle__label.material-icons
+    {
+        line-height: 20px !important;
+    }
+}
+
+@media (max-width: 374px) {
+    .nameclass
+    {
+        width: calc(100% - 80px) !important;
+    }
+    #photo
+    {
+        width: 80px;
+        height: 80px;
+    }
+    .listtitle
+    {
+        font-size: 11pt !important;
+        margin-bottom: unset !important;
+    }
+    .h5listtitle
+    {
+        font-size: 9pt !important;
+        padding-bottom: unset !important;
+    }
+    .mdl-icon-toggle__label.material-icons
+    {
+        line-height: 15px !important;
+        font-size: 20px !important;
+        height: 10px !important;
     }
 }
