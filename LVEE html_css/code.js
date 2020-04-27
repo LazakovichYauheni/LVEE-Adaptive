@@ -74,11 +74,13 @@ function openmaterialitemslist(ID,icon)
     
     if(isSponsOpened == false)
     {
+        
         $(document).ready(function(){
             $("#"+icon).toggleClass("rotate180");
             $("#"+ID).stop().slideToggle(300);
         });
         document.getElementById("#"+ID).style.display = "block";
+        
         isSponsOpened = true;
     }
     else if (isSponsOpened == true)
@@ -90,6 +92,20 @@ function openmaterialitemslist(ID,icon)
         isSponsOpened = false;
     }
 
+}
+
+function openallmaterialitemslist(ID,icon)
+{
+    $(document).ready(function(){
+        if($("."+ID).css("display")== "none"){
+            $(".mdl-icon-toggle__label.material-icons.iconarrow1").text('unfold_less');
+            $("."+ID).css("display","block");
+        }
+        else if($("."+ID).css("display") == "block"){
+            $(".mdl-icon-toggle__label.material-icons.iconarrow1").text('unfold_more');
+            $("."+ID).css("display","none");
+        }
+    });
 }
 
 
