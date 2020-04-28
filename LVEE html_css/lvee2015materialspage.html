@@ -159,8 +159,8 @@
             </div>
         </div>    
     </div>
-    <div id="titlecontainer">
-        <h1 id="title">LVEE 2015 Materials</h1>
+    <div id="titlecontainer" class="sticky-header is-sticky" onclick="openallmaterialitemslist('xx','iconarrow1')">
+        <h1 id="title">LVEE 2015 Materials <i class="mdl-icon-toggle__label material-icons iconarrow1" style="float: right; text-align: right;line-height: 50px;" id="iconarrow1">unfold_more</i></h1>
     </div>
     <table id="table" style="display: none;">
             <thead style="text-align: center;">
@@ -498,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="1st">
+                <ul class="materialitemslist xx" id="1st">
                         <h6>Article describes the history of creation and supporting Linux-based infrastructure in ECM department of BSUIR. Described evolution and current state of technical decisions used for creation Linux-based infrastructure.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/238">
@@ -523,7 +523,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="2nd">
+                <ul class="materialitemslist xx" id="2nd">
                     <h6>Continuous availability is an absolute priority for the network applications. However, there are cases when the application unavailable to users (eg software update). This publication - offers one of the solutions.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/240">
@@ -548,7 +548,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="3th">
+                <ul class="materialitemslist xx" id="3th">
                     <h6>CRIU is the open-source checkpoint-restore project of the Odin (former Parallels) company. It provides basis for containers live-migration, seamless kernel update and a set of other features. In this talk I will present the current state of the project, describe the community that has grown around it and show how the open development model of a small project affected the life of the whole company.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/241">
@@ -573,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="4th">
+                <ul class="materialitemslist xx" id="4th">
                     <h6>The article provides a comparative analysis of cross-platform programming tools. Cross-platform programming tools are divided into three groups: cross-platform compiled languages (Table 1), cross-platform programming languages at the execution level (Table 2) and cross-platform interpreters (Table 3).</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/253">
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="5th">
+                <ul class="materialitemslist xx" id="5th">
                     <h6>One of base questions that appear in data synchronisation, is getting file notifications from the directory. Common solution for this is using a Linux kernel subsystem such as inotify or fanotify. Since fanotify doesn't notify file deletions, file renames or file moves, it is difficult to use fanotify for such applications. But of course fanotify gives as pid of process which have caused the event to happen. This can be very useful for some special cases, for example we should ignore events created by themselves.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/242">
@@ -623,7 +623,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="6th">
+                <ul class="materialitemslist xx" id="6th">
                     <h6>Classification of the different types of graphics elements will be given. Mixed methods to work with graphics within LaTeX system are examined. A brief overview of the appropriate tools and tips are given as well.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             ABSTRACTS
@@ -646,7 +646,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="7th">
+                <ul class="materialitemslist xx" id="7th">
                     <h6>The rights to study and modify free software imply access to its source code. The rights to verify scientific result imply access to its background and previous results. That could be a problem if an access was given by a (url-)link. The problem will be considered in the present article.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/244">
@@ -671,7 +671,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="8th">
+                <ul class="materialitemslist xx" id="8th">
                     <h6>Cross-platform development gives you more users, less development costs, immunity to vendor lock-in and other goodies. But how to do it properly? Below the experience of Opera Software with its famous Opera browser is presented, including problems that arised and how they were solved.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/249">
@@ -696,7 +696,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="9th">
+                <ul class="materialitemslist xx" id="9th">
                     <h6>PostgreSQL offers great extendability. Users can add literally everything on their own: data types, functions, operators, index types, procedural languages and so on. But in order to use the full power of these features one should write C code for PostgreSQL. Traditionally it's assumed that barrier to entry of C programming for PostgreSQL is very high.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/258">
@@ -721,7 +721,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="10th">
+                <ul class="materialitemslist xx" id="10th">
                     <h6>Performance of Linux network stack was always kept in mind during any implementation. Increasing demand for cloud services, multimedia content, high performance computing forces to search new ways of optimization. SO_BUSY_POLL is one of the way to improve processing of incoming network messages without changing source code of the product.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/251">
@@ -746,7 +746,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="11th">
+                <ul class="materialitemslist xx" id="11th">
                     <h6>The article gives an overview of the free software usage in film-making industry. It covers all the basic steps of creating an animated film with specifics related to Blender.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/243">
@@ -771,7 +771,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="12th">
+                <ul class="materialitemslist xx" id="12th">
                     <h6>In modern Open Source world we need an open alternative to the proprietary product called BIOS. This alternative exists and is called coreboot. Coreboot is not fully equal to BIOS, it's only does initialization of RAM, execution of binary vendor blobs and starting some payload. The report main task is to cover how to start using it.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/245">
@@ -796,7 +796,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="13th">
+                <ul class="materialitemslist xx" id="13th">
                     <h6>Modern heterogeneous infrastructure, which contains different type of network devices and servers, needs modern monitoring systems. Also the main problem of finding proper solution is that it should fulfil requirements of flexibility, openness, good support from community.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
@@ -821,7 +821,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="14th">
+                <ul class="materialitemslist xx" id="14th">
                     <h6>Automatic bibliography generation, being common for LaTeX users, is irrationally rarely used by scientists that prepare publications via WYSIWYG editing packages. While some linkers of BibTeX system to office packages exist, one may prefer more profound reference systems that automatize also crawling and managing citations as well as regular sorting and pattern formatting. FLOSS example of such system, named Zotero, is discussed in the presentation.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/248">
@@ -846,7 +846,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="15th">
+                <ul class="materialitemslist xx" id="15th">
                     <h6>In 1999, the company SWsoft (Parallels) was born the concept of container virtualization. We have formulated three major components that defines the container itself: a set of processes with namespaces, file system for the separation of code and memory and resource isolation.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/246">
@@ -871,7 +871,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="16th">
+                <ul class="materialitemslist xx" id="16th">
                     <h6>3D printing or additive manufacturing is a process of making three-dimensional solid objects from a digital file. The creation of a 3D printed object is achieved using additive processes, when object is created by laying down successive layers of material one by one until the entire model is recreated. Each of these layers can be seen as a thinly sliced horizontal cross-section of the eventual object.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/250">
@@ -896,7 +896,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="17th">
+                <ul class="materialitemslist xx" id="17th">
                     <h6>An open hardware project to measure physical state changes of the user while his/her interaction with software is presented. Galvanic skin response, heart rate and blood pressure are used as measured parameters. A schematics is proposed to get these parameters from electric and optical sensors. Arduino platform is engaged in getting data from developed sensors and passing them via USB cable to the receiving software, to store log in CSV format.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/239">
@@ -921,7 +921,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="18th">
+                <ul class="materialitemslist xx" id="18th">
                     <h6>Today network traffic is absolutely out of human control, this is something that human mind cannot manage. On the other hand, network security becomes more and more important, since more and more of human activities are moving to the Network.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/256">
@@ -946,7 +946,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="19th">
+                <ul class="materialitemslist xx" id="19th">
                     <h6>This work concerns some tasks needed for KAP (Kite Aerial Photography) with free software (mostly from Debian GNU/Linux). This method was successfully used for taking aerial photos of several open-airs in 2013 and 2014. Nowadays it is very important to have cheap and simple solution.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/252">
@@ -971,7 +971,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="20th">
+                <ul class="materialitemslist xx" id="20th">
                     <h6></h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/257">
@@ -996,7 +996,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="21th" >
+                <ul class="materialitemslist xx" id="21th" >
                     <h6></h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         ABSTRACTS

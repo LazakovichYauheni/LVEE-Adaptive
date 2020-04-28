@@ -277,4 +277,21 @@ h5 {
     }
 }
 
+@media (min-width: 375px) and (max-width: 468px) {
+    #title
+    {
+        font-size: 21pt !important;
+    }
+}
+@media (max-width: 374px) {
+    #title
+    {
+        font-size: 17pt !important;
+    }
+    .mdl-icon-toggle__label.material-icons.iconarrow1
+    {
+        line-height: 35px !important;
+    }
+}
+
 

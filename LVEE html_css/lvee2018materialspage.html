@@ -159,8 +159,8 @@
             </div>
         </div>    
     </div>
-    <div id="titlecontainer">
-        <h1 id="title">LVEE 2018 Materials</h1>
+    <div id="titlecontainer" class="sticky-header is-sticky" onclick="openallmaterialitemslist('xx','iconarrow1')">
+        <h1 id="title">LVEE 2018 Materials <i class="mdl-icon-toggle__label material-icons iconarrow1" style="float: right; text-align: right;line-height: 50px;" id="iconarrow1">unfold_more</i></h1>
     </div>
     <table id="table" style="display: none;">
             <thead style="text-align: center;">
@@ -498,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="1st">
+                <ul class="materialitemslist xx" id="1st">
                         <h6>LibOSTree (aka "OSTree") project is aimed to create git-like bootable filesystem trees. This is shared library and set of utilities to manage content-addressed-object store and local "checkouts" of filesystem trees allowing transactional upgrades and rollbacks of the system.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/238">
@@ -523,7 +523,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="2nd">
+                <ul class="materialitemslist xx" id="2nd">
                     <h6>The concept to create hybrid data storage is covered. Main approaches to implement hybrid data storage systems are reviewed as well as modern development tendencies in FOSS.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/240">
@@ -548,7 +548,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="3th">
+                <ul class="materialitemslist xx" id="3th">
                     <h6>In case of using different SCM the most important aspects are: correct work of target configuration, simplicity lifecycle support of DSL code written for target SCM and having different tests for things which is under control of SCM. This article shows more efficient way for development, testing and support for Ansible-roles; including continuous integration, code-review, guideline compliance.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/241">
@@ -573,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="4th">
+                <ul class="materialitemslist xx" id="4th">
                     <h6>A data storage clasterization specifics based on Parallel NFS (pNFS) is reviewed. The pNFS protocol details and architecture-related specifics are covered as well as its current state.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/253">
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="5th">
+                <ul class="materialitemslist xx" id="5th">
                     <h6>Darktable is an open source application devoted to processing of RAW files. The program can manage collections of RAWs with rating, color labels and custom tags. A rich set of built-in filters, used at processing, store their settings in a form of a history stack, which is saved alongside original RAW, providing original RAW untouched.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/242">
@@ -623,7 +623,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="6th">
+                <ul class="materialitemslist xx" id="6th">
                     <h6>Open source software helps users to use their products across multiple platforms while closed source application try to stick user on a single platform. The level of integration and trust between enterprise solutions and open source products grows every year. Future innovations and successful businesses start today with help of open source.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             ABSTRACTS
@@ -646,7 +646,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="7th">
+                <ul class="materialitemslist xx" id="7th">
                     <h6>Nowadays programs are too complex for verification and any developer can't guarantee that program is valid in every situation. Inthis talk I'll try to introduce modern ways for automatic testing C/C++ programs. I will talk about proper compiler settings, static and dynamic analyzers, sanitizers and fuzzing tecniques.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/244">
@@ -671,7 +671,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="8th">
+                <ul class="materialitemslist xx" id="8th">
                     <h6>This Engineering Report carries the essence of the problem, the integration between the two worlds and the camps of unqualified skeptics, who are often similar to the racetrack. The transition from a proprietary infrastructure to a free one at this given time will always be complicated by two factors - maintenance and integration.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/249">
@@ -696,7 +696,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="9th">
+                <ul class="materialitemslist xx" id="9th">
                     <h6>Complex applications work with dynamically linked libraries. Statically linked applications would be very large and have lack of flexibility as with dynamic libraries, because one library can be used by several applications at once. The purpose of this report is precisely to focus on all low-level features of working with these libraries, including such mechanisms like ELF sections, symbol relocations, GOT(global offset table), PLT(procedure linkage table).</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/258">
@@ -721,7 +721,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="10th">
+                <ul class="materialitemslist xx" id="10th">
                     <h6>LAVA is a continuous integration system for deploying operating systems onto physical and virtual hardware for running tests. With LAVA, it is possible to run automated tests across multiple hardware platforms in the real operating system environment.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/251">
@@ -746,7 +746,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="11th">
+                <ul class="materialitemslist xx" id="11th">
                     <h6>Android is very popular mobile platform and amount of apps, that work with sensitive information, for example banking apps, grows every day. Thus anti-reverse-engineering technologies are now increasingy more important. In this presentation I will tell how to obfuscate sensitive data in the Android byte code by moving it to encrypted files that will be decrypted by native code, and how to automate this process. I will use strings as examples of data, but the described technique can be applied to other types of data as well.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/243">
@@ -771,7 +771,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="12th">
+                <ul class="materialitemslist xx" id="12th">
                     <h6>Console orineted services: wttr.in, cheat.sh, rate.sx: idea, usage, and creation The presentation is devoted to console oriented services, such as: wttr.in, cheat.sh, rate.sx. Which popular console oriented services exist currently and how can they be used in everyday life; what advantages and disadvantages do they have; how services like that could be created.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/245">
@@ -796,7 +796,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="13th">
+                <ul class="materialitemslist xx" id="13th">
                     <h6>Elbrus 801-PC workstation supports three displays out-of-box but is further extendable to dual-seat configuration (with each seat still supporting up to three displays); that's what we've done in ALT installer.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">
@@ -821,7 +821,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="14th">
+                <ul class="materialitemslist xx" id="14th">
                     <h6>A game stream service development and architecture specifics are covered with focus on the open source components. Personal experience of building such service is covered, including components choice and resulting performance.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/248">
@@ -846,7 +846,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="15th">
+                <ul class="materialitemslist xx" id="15th">
                     <h6>The questions of the use of free software are considered both in the process of preparing the student and in the form of a means of supporting the educational process (educational environment) in the Sergiev Posad branch of the All-Russian State Institute of Cinematography. S.A. Gerasimov (VGIK).</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/246">
@@ -871,7 +871,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="16th">
+                <ul class="materialitemslist xx" id="16th">
                     <h6>A case of Jenkins CI/CD system in AWS cloud is reviewed, featuring use of spot instances, which are extemely cheap but are affected with arbitrary shutdowns in any time by the cloud provider. An approach to run Jenkins master on spot instances in AWS with fault tolerance and automatic fault recovery is proposed. Comparison of plugins which allow to run worker nodes on spot instances on-demand is presented.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/250">
@@ -896,7 +896,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="17th">
+                <ul class="materialitemslist xx" id="17th">
                     <h6>An overview of applicability of C language in modern world, demonstrating its weak and strong sides.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/239">
@@ -921,7 +921,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="18th">
+                <ul class="materialitemslist xx" id="18th">
                     <h6>This is the story about latest Intel tries to discriminate OpenBSD on getting pre-public disclosure infromation about vulnerabilities in its products.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/256">
@@ -946,7 +946,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="19th">
+                <ul class="materialitemslist xx" id="19th">
                     <h6>In this report, I would like to share the experience of using the DevOps philosophy in our company for one of the projects in the financial sphere. Emphasis will be placed on the work of the quality assurance department, because exactly because of the large number of questions there and the increased quality requirements, the philosophy of DevOps was applied there in the first place.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/252">
@@ -971,7 +971,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="20th">
+                <ul class="materialitemslist xx" id="20th">
                     <h6>This material is intended to describe the legal side of developing software and releasing its source code in public access. Such aspects as third party components licensing compliance, copyright and trademark rights infringements, contribution license agreements, authorship notices are covered by this text.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/257">
@@ -996,7 +996,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="21th" >
+                <ul class="materialitemslist xx" id="21th" >
                     <h6></h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         ABSTRACTS
@@ -1019,7 +1019,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="22th" >
+                <ul class="materialitemslist xx" id="22th" >
                     <h6></h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         ABSTRACTS
@@ -1049,7 +1049,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="23th">
+                <ul class="materialitemslist xx" id="23th">
                         <h6>Google Summer of Code (GSoC) 2018 is starting up, accepted organizations will be announced soon and students will start their endeavors. The author aims to help them explaining typical student application mistakes and workflow issues, as well as discuss mentoring problems.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/238">
@@ -1074,7 +1074,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="24th">
+                <ul class="materialitemslist xx" id="24th">
                     <h6>Quite often there is a situation where the user needs to translate information from the graphical representation to the text. This includes both scanning documents and simply recognizing textual information from photos. In the course of the report you will get acquainted with the open means for text recognition, image processing and received text</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/240">
@@ -1099,7 +1099,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="25th">
+                <ul class="materialitemslist xx" id="25th">
                     <h6></h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/241">
@@ -1124,7 +1124,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="26th">
+                <ul class="materialitemslist xx" id="26th">
                     <h6>.NET Core platform is a cross-platform analogue of .NET Framework on a base class library (BCL) level. It implements the .NET Standard 2.0 specification. This report is a review of development tools, development environment options and methods of creating graphical interfaces that are aimed at creating cross-platform user applications.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/253">
@@ -1149,7 +1149,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="27th">
+                <ul class="materialitemslist xx" id="27th">
                     <h6>We learned to install our OS onto Elbrus systems in an almost user-friendly manner, not only to just boot it, over this year. Quite a feat given that ALT is the third known operating system to run on e2k!</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/242">
@@ -1174,7 +1174,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="28th">
+                <ul class="materialitemslist xx" id="28th">
                     <h6>Moscow State University CMC department basic course «Computer Architecture and Assembly Language» has two official implementations: one pretty outdated (16bit based) and one too complex (x86_64 based). In pursuit of simplicity, actuality and practical support we have developed, approved and used a course based on MIPS32 architecture using MARS simulator as practice platform, along with semi-authomatic homework verification.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             ABSTRACTS
@@ -1197,7 +1197,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="29th">
+                <ul class="materialitemslist xx" id="29th">
                     <h6></h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/244">
@@ -1222,7 +1222,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="30th">
+                <ul class="materialitemslist xx" id="30th">
                     <h6></h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/249">
@@ -1247,7 +1247,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="31th">
+                <ul class="materialitemslist xx" id="31th">
                     <h6>Apertis is a Debian-derived platform for infotainment in automotive vehicles. Being a Debian derivative, Apertis doesn’t use typical Debian infrastructure software, so a infrastructure to build it had to be created using Jenkins, Open Build Service and other tools to provide continuous integration and package and image builds. </h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/258">
@@ -1272,7 +1272,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="32th">
+                <ul class="materialitemslist xx" id="32th">
                     <h6>Debos is a tool to make creation of various debian based os "images" simpler. While most other tools focus on specific use-case, debos is more meant as a toolchain to make comon actions trivial while providing enough rope to do whatever tweaking that might be required behind the scene.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/251">
@@ -1297,7 +1297,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="33th">
+                <ul class="materialitemslist xx" id="33th">
                     <h6>Reproducible builds are important for various reasons, security among them. This talk explains what is done to check whether package build is reproducible in ALT Linux Team Build Infrastructure.</h6>
                         <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                             <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/243">
@@ -1322,7 +1322,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="34th">
+                <ul class="materialitemslist xx" id="34th">
                     <h6>This article describes the available methods for image processing using a complex biometric iris recognition system, OpenCV open source computer vision and machine learning software library and the Qt cross-platform. The author proposes the solution of using of a smartphone camera instead of an expensive monochrome camera.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/245">
@@ -1347,7 +1347,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="materialitemslist" id="35th">
+                <ul class="materialitemslist xx" id="35th">
                     <h6>We provide brief overview and comparison of three open-source speech-recognition systems: CMUSphinx, Kaldi, DeepSpeech.</h6>
                     <button id="matbtn15" class="mdl-button mdl-js-button h5materialsstyle">
                         <a style="color: #e73b3b; text-decoration:none; font-weight: 600;" href="https://lvee.org/ru/abstracts/255">

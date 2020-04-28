@@ -98,7 +98,7 @@ function openallmaterialitemslist(ID,icon)
     {
         $(".mdl-icon-toggle__label.material-icons.iconarrow1").text('unfold_more');
         $(".xx").css("display","none");
-        $(".mdl-icon-toggle__label.material-icons.iconarrow2.xx2").text('expand_more');
+        $(".mdl-icon-toggle__label.material-icons.iconarrow2").text('expand_more');
         isSponsOpened == false;
         clicked = false;
     }
@@ -106,7 +106,7 @@ function openallmaterialitemslist(ID,icon)
     {
         $(".mdl-icon-toggle__label.material-icons.iconarrow1").text('unfold_less');
         $(".xx").css("display","block");
-        $(".mdl-icon-toggle__label.material-icons.iconarrow2.xx2").text('expand_less');
+        $(".mdl-icon-toggle__label.material-icons.iconarrow2").text('expand_less');
         isSponsOpened == true;
         clicked = true;
     }
