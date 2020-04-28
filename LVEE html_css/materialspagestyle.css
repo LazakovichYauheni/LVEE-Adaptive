@@ -221,7 +221,11 @@ h5 {
     }
     .mdl-icon-toggle__label.material-icons
     {
-        line-height: 20px !important;
+        line-height: 40px !important;
+    }
+    .nameclass
+    {
+        width: calc(100% - 100px) !important;
     }
 }
 
@@ -241,7 +245,7 @@ h5 {
     }
     .mdl-icon-toggle__label.material-icons
     {
-        line-height: 20px !important;
+        line-height: 50px !important;
     }
 }
 
@@ -267,7 +271,7 @@ h5 {
     }
     .mdl-icon-toggle__label.material-icons
     {
-        line-height: 15px !important;
+        line-height: 5px !important;
         font-size: 20px !important;
         height: 10px !important;
     }
