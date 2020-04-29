@@ -294,4 +294,41 @@ h5 {
     }
 }
 
-
+@media (min-width: 1123px) {
+    .organisers
+    {
+        width: 500px !important;
+    }
+}
+@media (min-width: 991px) and (max-width: 1122px) {
+    .organisers
+    {
+        width: 400px !important;
+    }
+}
+@media (min-width: 859px) and (max-width: 990px) {
+    .organisers
+    {
+        width: 300px !important;
+    }
+    .organiserstitle
+    {
+        font-size: 15pt !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 858px) {
+    .organisers
+    {
+        width: 230px !important;
+    }
+    .organiserstitle
+    {
+        font-size: 13pt !important;
+        line-height: 30px !important;
+    }
+    .organiserstitle.role
+    {
+        font-size: 11pt !important;
+        line-height: 30px !important;
+    }
+}
