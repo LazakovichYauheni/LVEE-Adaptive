@@ -295,6 +295,10 @@ h5 {
 }
 
 @media (min-width: 1123px) {
+    .organiserstitle
+    {
+        font-size: 15pt !important;
+    }
     .organisers
     {
         width: 500px !important;
