@@ -336,3 +336,15 @@ h5 {
         line-height: 30px !important;
     }
 }
+
+@media (max-width: 425px) {
+    .organiserstitle
+    {
+        font-size: 12pt !important;
+        margin-bottom: unset !important;
+    }
+    .organiserssubtitle
+    {
+        font-size: 10.5pt !important;
+    }
+}
