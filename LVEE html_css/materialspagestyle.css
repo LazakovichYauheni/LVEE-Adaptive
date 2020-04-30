@@ -380,3 +380,26 @@ h5 {
         min-width: 45px !important;
     }
 }
+@media (max-width: 1166px) and (min-width: 1024px) {
+    .wikititlecontainer
+    {
+        width: 50% !important;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+    .wikititlecontainer
+    {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .wikititle
+    {
+        font-size: 15pt !important;
+    }
+    .wikisubtitle
+    {
+        font-size: 12pt !important;
+    }
+}
