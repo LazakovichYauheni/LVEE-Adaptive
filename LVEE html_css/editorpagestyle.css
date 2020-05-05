@@ -56,3 +56,19 @@
         font-size: 12pt !important;
     }
 }
+
+@media (max-width: 598px) {
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.desktopsearch
+    {
+        display: none !important;
+    }
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mobilesearch
+    {
+        display: flex !important;
+    }
+    #title
+    {
+        float: unset !important; 
+        margin-bottom: unset !important;
+    }
+}
