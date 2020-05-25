@@ -2594,11 +2594,11 @@ body {
 }
 
 .imgcurr {
-    opacity: 0.84;
+    opacity: unset;
     border-radius: 8px;
     height: 760px;
     width: 100%;
-    background-image: url(currentconference.jpg);
+    background-image: url(currentconferenceedited.png);
     background-size: cover;
     background-position: center;
 }

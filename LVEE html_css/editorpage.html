@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
 <head>
@@ -45,7 +45,7 @@
             <div style="width:55%; float: left;">
                 <h1 class="menutitle">LVEE</h1>
             </div>
-            <div class="imagecontainer" style="width: 43%; float: right;">
+            <!-- <div class="imagecontainer" style="width: 43%; float: right;">
                 <a href="https://facebook.com" class="facebook">
                     <img src='icons8-facebookRed.png' class="facebookimg" style="width: 45px; padding-right: 5%;"></img>
                 </a>
@@ -55,7 +55,7 @@
                 <a href="https://vk.com" class="vk">
                     <img src='icons8-vkRed.png' class="vkimg" style="width: 50px;"></img>
                 </a>
-            </div>
+            </div> -->
         </div>
 
         <div id="desktopnav">
@@ -160,11 +160,33 @@
             </div>
         </div>    
     </div>
+    <script>
+        function searchOnPage(){
+            var input, filter, eiement,txtValue;
+            input = document.getElementById('sample6');
+            filter = input.value.toUpperCase();
+            element = document.getElementById('elem');
+            text = element.getElementsByTagName('h3');
+
+            for(var i = 0; i < element.length; i++)
+            {
+                txtValue = text.textContent || text.innerText;
+                if(txtValue.toUpperCase().indexOf(filter) > -1)
+                {
+                    element[i].style.display = "";
+                }
+                else
+                {
+                    element[i].style.display = "none";
+                }
+            }
+        }
+    </script>
     <div id="titlecontainer" style="margin-right: 9.5% !important;" class="sticky-header is-sticky">
         <h1 id="title" style="float: left;">Image Uploads</h1>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable desktopsearch" style="float: right; margin: 24px 0;">
             <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" id="sample6">
+                <input class="mdl-textfield__input" type="text" id="sample6" onkeyup="searchOnPage()">
                 <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
             </div>
             <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
@@ -182,7 +204,7 @@
         </div>
     </div>
     <div style="margin-left: 5.5%; margin-right: 5.5%;">
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">part.jpg</a></h3>
@@ -201,7 +223,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">faceoff__.gif</a></h3>
@@ -220,7 +242,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">sturm-pic.png</a></h3>
@@ -239,7 +261,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">borodaenko.jpg</a></h3>
@@ -258,7 +280,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">mend0za-official.jpg</a></h3>
@@ -277,7 +299,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left;margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left;margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">sr0007_small.jpg</a></h3>
@@ -296,7 +318,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">sr0008_small.jpg</a></h3>
@@ -315,7 +337,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px; " class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px; " class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">lvee2005.jpg</a></h3>
@@ -334,7 +356,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">mailplan</a></h3>
@@ -353,7 +375,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">attribution_winter</a></h3>
@@ -372,7 +394,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px;">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">code_of_conduct</a></h3>
@@ -391,7 +413,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">1st Call</a></h3>
@@ -410,7 +432,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">LVEE_2005_03</a></h3>
@@ -429,7 +451,7 @@
                 </ul>
             </div>
         </div>
-        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer">
+        <div style="width: 30%; float: left; margin-left: 2%; margin-right: 2%; margin-top: 15px; margin-bottom: 15px;" class="tablecontainer" id="elem">
             <div style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); height: auto; display: flow-root; padding:20px; ">
                 <div class="materialtitlecontainer editortitlecontainer" style="float: left;">
                     <h3 class="materialtitle"><a style="text-decoration: unset; color: unset; font-weight: 600;" href="index.html">LVEE_2007_01</a></h3>
