@@ -646,10 +646,18 @@ body {
     {
         width: 100% !important;
     }
+    .emailinput.inputs1
+    {
+        width: 200px !important;
+    }
 
     .mdl-textfield__label.labelacc.labels
     {
         width: 100% !important;
+    }
+    .mdl-textfield__label.labelacc.labels1
+    {
+        width: 200px !important;
     }
 
     #changeacc
@@ -659,6 +667,10 @@ body {
     }
 
     .mdl-textfield__label.labelacc.labels:after
+    {
+        bottom: 0px !important;
+    }
+    .mdl-textfield__label.labelacc.labels1:after
     {
         bottom: 0px !important;
     }
@@ -976,9 +988,17 @@ body {
     {
         width: 300px !important;
     }
+    .emailinput.input1
+    {
+        width: 200px !important;
+    }
     .mdl-textfield__label.labelacc.labels
     {
         width: 300px !important;
+    }
+    .mdl-textfield__label.labelacc.labels1
+    {
+        width: 200px !important;
     }
     .mdl-textfield.mdl-js-textfield.getmdl-select.acccity
     {
@@ -1854,6 +1874,14 @@ body {
     flex-direction: column;
     clear: both;
     width: auto;
+}
+.themecontainer1 {
+    position: relative;
+    display: flex;
+    left: 10%;
+    flex-direction: column;
+    clear: both;
+    width: 200px;
 }
 
 /* #endregion */
