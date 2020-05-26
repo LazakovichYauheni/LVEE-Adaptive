@@ -2514,6 +2514,15 @@ body {
     clear: both;
 }
 
+#itemseditorlist {
+    padding:0;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    float: left;
+    clear: both;
+}
+
 #itemssponslist {
     padding:0;
     display: none;

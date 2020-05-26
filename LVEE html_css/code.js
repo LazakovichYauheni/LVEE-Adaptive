@@ -68,6 +68,21 @@ function openpartitemslist()
     }
 
 }
+function openeditoritemslist()
+{
+
+    if(isPartOpened == false)
+    {
+        document.getElementById("itemseditorlist").style.display = "flex";
+        isPartOpened = true;
+    }
+    else if (isPartOpened == true)
+    {
+        document.getElementById("itemseditorlist").style.display = "none";
+        isPartOpened = false;
+    }
+
+}
 
 function openmaterialitemslist(ID,icon)
 {
