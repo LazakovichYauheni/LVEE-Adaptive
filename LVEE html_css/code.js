@@ -254,3 +254,14 @@ jQuery(document).ready(function()
     classFunction();
     jQuery(window).resize(classFunction);
 })
+
+function swapStyle(cssFile,cssLinkIndex) {
+    var element = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel","stylesheet");
+    newlink.setAttribute("type","text/css");
+    newlink.setAttribute("href",cssFile);
+
+    document.getElementsByTagName("head").item(0).replaceChild(newlink,element);
+}

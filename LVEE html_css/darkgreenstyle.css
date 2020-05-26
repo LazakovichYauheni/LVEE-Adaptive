@@ -163,7 +163,7 @@ body {
     .currtitle
     {
         font-size: 14.5pt !important;
-        text-shadow: 1px 0px 0px #e73b3b !important ;
+        text-shadow: 1px 0px 0px #0e9936 !important ;
     }
 
     .newstitle
@@ -1272,7 +1272,7 @@ body {
 
     .currtitle
     {
-        text-shadow: 1px 0px 0px #e73b3b !important;
+        text-shadow: 1px 0px 0px #0e9936 !important;
         letter-spacing: 2px !important;
         padding-top: 2%;
         margin-top:0 !important;
@@ -1290,7 +1290,7 @@ body {
 
     .prevtitle
     {
-        text-shadow: 1px 0px 0px #e73b3b !important;
+        text-shadow: 1px 0px 0px #0e9936 !important;
         letter-spacing: 3px !important;
         padding-top: 2%;
         margin-top:0 !important;
@@ -1299,7 +1299,7 @@ body {
 
     .sponsorsTitle
     {
-        text-shadow: 1px 0px 0px #e73b3b !important;
+        text-shadow: 1px 0px 0px #0e9936 !important;
         letter-spacing: 3px !important;
         padding-top: 2%;
         margin-top:0 !important;
@@ -1307,7 +1307,7 @@ body {
     }
     .techical
     {
-        text-shadow: 1px 0px 0px #e73b3b !important;
+        text-shadow: 1px 0px 0px #0e9936 !important;
         letter-spacing: 0px !important;
         padding-top: 2%;
         margin-top:0 !important;
@@ -1315,7 +1315,7 @@ body {
     }
     .infopartners
     {
-        text-shadow: 1px 0px 0px #e73b3b !important;
+        text-shadow: 1px 0px 0px #0e9936 !important;
         letter-spacing: 0px !important;
         padding-top: 2%;
         margin-top:0 !important;
@@ -1589,7 +1589,7 @@ body {
 }
 
 #navRight .closebtnright:hover {
-    color: #e73b3b;
+    color: #0e9936;
     transition: 0.2s;
 }
 
@@ -1678,7 +1678,7 @@ body {
 }
 
 .lefttitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 15pt;
     margin-bottom: 40px;
@@ -1703,7 +1703,7 @@ body {
 }
 
 .righttitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 15pt;
     margin-bottom: 40px;
@@ -1752,7 +1752,7 @@ body {
 }
 
 .basictitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     position: relative;
@@ -1774,7 +1774,7 @@ body {
 }
 
 #changeacc {
-    color: #e73b3b;
+    color: #0e9936;
     height: 70px;
     position: relative;
     width: unset;
@@ -1793,7 +1793,7 @@ body {
 }
 
 .passtitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     position: relative;
@@ -1828,7 +1828,7 @@ body {
 }
 
 .locationtitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     position: relative;
@@ -1856,7 +1856,7 @@ body {
 }
 
 .themetitle {
-    color: #e73b3b;
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     position: relative;
@@ -2002,7 +2002,7 @@ body {
 }
 
 #username {
-    color: #e73b3b;
+    color: #0e9936;
     width: 100%;
     height: 70px;
     position: absolute;
@@ -2014,7 +2014,7 @@ body {
 }
 
 #password {
-    color: #e73b3b;
+    color: #0e9936;
     width: 100%;
     height: 70px;
     position: absolute;
@@ -2111,7 +2111,7 @@ body {
 }
 
 #email {
-    color: #e73b3b;
+    color: #0e9936;
     width: 100%;
     height: 70px;
     position: absolute;
@@ -2159,7 +2159,7 @@ body {
     margin: 0 5px;
     border: 1.2px solid;
     border-radius: 50%;
-    border-color: #e73b3b;
+    border-color: #0e9936;
     background-color: transparent;
     z-index: 1000;
 }
@@ -2169,8 +2169,8 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border-color: #e73b3b;
-    background-color: #e73b3b;
+    border-color: #0e9936;
+    background-color: #0e9936;
     z-index: 1000;
     margin-top: -1px;
 }
@@ -2181,7 +2181,7 @@ body {
     height: 10px;
     border: 1.2px solid;
     border-radius: 50%;
-    border-color: #e73b3b;
+    border-color: #0e9936;
     background-color: transparent;
     z-index: 1000;
 }
@@ -2192,7 +2192,7 @@ body {
     height: 10px;
     border: 1.2px solid;
     border-radius: 50%;
-    border-color: #e73b3b;
+    border-color: #0e9936;
     background-color: transparent;
     z-index: 1000;
 }
@@ -2235,7 +2235,7 @@ body {
     height: 10px;
     border: 1.2px solid;
     border-radius: 50%;
-    border-color: #e73b3b;
+    border-color: #0e9936;
     background-color: transparent;
 }
 
@@ -2244,8 +2244,8 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border-color: #e73b3b;
-    background-color: #e73b3b;
+    border-color: #0e9936;
+    background-color: #0e9936;
     z-index: 1000;
     margin-top: -1px;
 }
@@ -2280,8 +2280,8 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border-color: #e73b3b;
-    background-color: #e73b3b;
+    border-color: #0e9936;
+    background-color: #0e9936;
     z-index: 1000;
     margin-top: -1px;
 }
@@ -2357,7 +2357,7 @@ body {
 }
 
 .sidenav .closebtn:hover {
-    color: #e73b3b;
+    color: #0e9936;
     transition: 0.2s;
 }
 
@@ -2369,7 +2369,7 @@ body {
 }
 
 .menutitle {
-    color: #e73b3b;
+    color: #0e9936;
     font-size: 45pt;
     font-weight: 500;
     font-family: Open Sans, Noto Sans Japanese, Montserrat, sans-serif;
@@ -2604,12 +2604,12 @@ body {
 }
 
 .currtitle {
-    text-shadow: 2px 0px 0px #e73b3b;
+    text-shadow: 2px 0px 0px #0e9936;
     padding-top: 20px;
     letter-spacing: 0px;
     text-align: center;
     font-size: 50pt;
-    color: #e73b3b;
+    color: #0e9936;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
@@ -2684,7 +2684,7 @@ body {
     margin-top: 10%;
     width: 100%;
     overflow: hidden;
-    background-color: rgb(231, 59, 59);
+    background-color: #0e9936;
 }
 
 .newstitle {
@@ -2715,7 +2715,7 @@ body {
 }
 
 #textcard1 {
-    color: rgb(231, 59, 59);
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
@@ -2748,7 +2748,7 @@ body {
 }
 
 #textcard2 {
-    color: rgb(231, 59, 59);
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
@@ -2779,7 +2779,7 @@ body {
 
 
 #textcard3 {
-    color: rgb(231, 59, 59);
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
@@ -2809,7 +2809,7 @@ body {
 }
 
 #textcard4 {
-    color: rgb(231, 59, 59);
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
@@ -2840,7 +2840,7 @@ body {
 }
 
 #textcard5 {
-    color: rgb(231, 59, 59);
+    color: #0e9936;
     text-align: left;
     font-size: 17pt;
     margin-left: 10px;
@@ -2868,12 +2868,12 @@ body {
     width: 320px;
     height: 100px;
     transform: translate(-50%, -50%);
-    background-color: #e73b3b;
+    background-color: #0e9936;
     transition: 0.3s;
 }
 
 #matbtn:hover {
-    background-color: rgba(231, 59, 59, 0.8);
+    background-color: rgba(14, 153, 54, 0.8);
 }
 
 #matbtn2 {
@@ -2907,12 +2907,12 @@ body {
 }
 
 .prevtitle {
-    text-shadow: 2px 0px 0px #e73b3b;
+    text-shadow: 2px 0px 0px #0e9936;
     padding-top: 20px;
     letter-spacing: 0px;
     text-align: center;
     font-size: 50pt;
-    color: #e73b3b;
+    color: #0e9936;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
@@ -2964,12 +2964,12 @@ body {
     width: 320px;
     height: 100px;
     transform: translate(-50%, -50%);
-    background-color: #e73b3b;
+    background-color: #0e9936;
     transition: 0.3s;
 }
 
 #matbtn3:hover {
-    background-color: rgba(231, 59, 59, 0.8);
+    background-color: rgba(14, 153, 54, 0.8);
 }
 
 .carousel .indicators {
@@ -2977,11 +2977,11 @@ body {
 }
 
 .carousel .indicators .indicator-item.active {
-    background-color:  #e73b3b !important;
+    background-color:  #0e9936 !important;
 }
 
 .carousel .indicators .indicator-item {
-    border: 1px solid #e73b3b !important;
+    border: 1px solid #0e9936 !important;
 }
 
 /* #endregion */
@@ -2995,12 +2995,12 @@ body {
 }
 
 .sponsorsTitle {
-    text-shadow: 2px 0px 0px #e73b3b;
+    text-shadow: 2px 0px 0px #0e9936;
     padding-top: 20px;
     letter-spacing: 0px;
     text-align: center;
     font-size: 50pt;
-    color: #e73b3b;
+    color: #0e9936;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
@@ -3023,12 +3023,12 @@ body {
 } 
 
 .techical {
-    text-shadow: 2px 0px 0px #e73b3b;
+    text-shadow: 2px 0px 0px #0e9936;
     padding-top: 20px;
     letter-spacing: 0px;
     text-align: center;
     font-size: 30pt;
-    color: #e73b3b;
+    color: #0e9936;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
@@ -3058,12 +3058,12 @@ body {
 }
 
 .infopartners {
-    text-shadow: 2px 0px 0px #e73b3b;
+    text-shadow: 2px 0px 0px #0e9936;
     padding-top: 20px;
     letter-spacing: 0px;
     text-align: center;
     font-size: 30pt;
-    color: #e73b3b;
+    color: #0e9936;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
@@ -3098,7 +3098,7 @@ a:link {
 }
 
 .menucolor {
-    background-color: #e73b3b !important;
+    background-color: #0e9936 !important;
     transition: 0.6s;
 }
 
@@ -3154,15 +3154,15 @@ a:link {
 }
 
 .mdl-textfield__label:after {
-    background-color: #e73b3b !important;
-    color: #e73b3b !important;
+    background-color: #0e9936 !important;
+    color: #0e9936 !important;
     font-size: 20pt;
     padding-left: 10% !important;
     bottom:23px !important;
 }
 
 .getmdl-select.is-focused .mdl-icon-toggle__label {
-    color: #e73b3b !important;
+    color: #0e9936 !important;
 }
 
 .mdl-textfield__input {
@@ -3477,7 +3477,6 @@ a:link {
         height: 120px !important;
     }
 }
-
 .footstyle {
-    background-color: #e73b3b !important;
+    background-color: #0e9936 !important;
 }
