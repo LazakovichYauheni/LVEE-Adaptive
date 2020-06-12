@@ -292,7 +292,7 @@ h5 {
     }
     #abstroutput
     {
-        font-size: 18pt !important;
+        font-size: 14pt !important;
     }
     #maintextoutput
     {
@@ -318,7 +318,7 @@ h5 {
     }
     #abstroutput
     {
-        font-size: 14pt !important;
+        font-size: 12pt !important;
     }
     #maintextoutput
     {
@@ -440,6 +440,7 @@ h5 {
     background: none; 
     border: none; 
     outline: none;
+    cursor: pointer;
 }
 
 @media (max-width: 425px) {
