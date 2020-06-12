@@ -456,3 +456,15 @@ h5 {
 @media (max-width: 468px) and (min-width:374px) {
 
 }
+[contenteditable="true"].sample3 {
+    white-space: nowrap;
+    overflow: hidden;
+} 
+[contenteditable="true"].sample3 br {
+display:none;
+
+}
+[contenteditable="true"].sample3 * {
+display:inline;
+white-space:nowrap;
+}
