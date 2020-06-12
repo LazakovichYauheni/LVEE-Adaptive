@@ -290,6 +290,22 @@ h5 {
     {
         font-size: 21pt !important;
     }
+    #authorsoutput
+    {
+        font-size: 14pt !important;
+    }
+    #conferenceoutput
+    {
+        font-size: 14pt !important;
+    }
+    #annotationoutput
+    {
+        font-size: 14pt !important;
+    }
+    #licenseoutput
+    {
+        font-size: 14pt !important;
+    }
     #abstroutput
     {
         font-size: 14pt !important;
@@ -315,6 +331,22 @@ h5 {
     #titleoutput
     {
         font-size: 17pt !important;
+    }
+    #authorsoutput
+    {
+        font-size: 12pt !important;
+    }
+    #conferenceoutput
+    {
+        font-size: 12pt !important;
+    }
+    #annotationoutput
+    {
+        font-size: 12pt !important;
+    }
+    #licenseoutput
+    {
+        font-size: 12pt !important;
     }
     #abstroutput
     {
@@ -450,6 +482,20 @@ h5 {
     }
     .abstrcontainer {
         min-height: unset !important;
+    }
+    .inenglish
+    {
+        font-size: 15pt !important;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .inenglish
+    {
+        font-size: 12pt;
+        line-height: 20px;
     }
 }
 
