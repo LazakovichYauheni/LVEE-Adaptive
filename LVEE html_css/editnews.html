@@ -271,6 +271,11 @@
                 $("#maintextoutput").text(text);
             });
         });
+        $("#sample3").keypress(function(event){
+            if (event.which == '13') {
+                event.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>    
