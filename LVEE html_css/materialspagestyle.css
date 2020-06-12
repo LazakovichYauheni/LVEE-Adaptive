@@ -282,6 +282,22 @@ h5 {
     {
         font-size: 21pt !important;
     }
+    #titlename
+    {
+        font-size: 21pt !important;
+    }
+    #titleoutput
+    {
+        font-size: 21pt !important;
+    }
+    #abstroutput
+    {
+        font-size: 18pt !important;
+    }
+    #maintextoutput
+    {
+        font-size: 14pt !important;
+    }
 }
 @media (max-width: 374px) {
     #title
@@ -291,6 +307,22 @@ h5 {
     .mdl-icon-toggle__label.material-icons.iconarrow1
     {
         line-height: 35px !important;
+    }
+    #titlename
+    {
+        font-size: 17pt !important;
+    }
+    #titleoutput
+    {
+        font-size: 17pt !important;
+    }
+    #abstroutput
+    {
+        font-size: 14pt !important;
+    }
+    #maintextoutput
+    {
+        font-size: 12pt !important;
     }
 }
 
@@ -402,4 +434,24 @@ h5 {
     {
         font-size: 12pt !important;
     }
+}
+
+.editbtn {
+    background: none; 
+    border: none; 
+    outline: none;
+}
+
+@media (max-width: 425px) {
+    .editimg {
+        width: 20px;
+        height: 20px;
+    }
+    .abstrcontainer {
+        min-height: unset !important;
+    }
+}
+
+@media (max-width: 468px) and (min-width:374px) {
+
 }
