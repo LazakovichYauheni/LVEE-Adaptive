@@ -197,14 +197,13 @@
         </div>    
     </div>
     <div id="titlecontainer" class="sticky-header is-sticky" >
-        <h1 id="title">Add a news item</h1>
+        <h1 id="title">Add a content item</h1>
     </div>
     <div id="titlecontainer" class="sticky-header is-sticky">
         <h3 id="titlename" style="font-family: 'Montserrat',sans-serif;">Title</h3>
 
-        <div id="changeacc" style="float: unset;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label changelab">
-            <input class="mdl-textfield__input emailinput inputs" type="text" id="sample3">
-            <label class="mdl-textfield__label labelacc labels" for="sample3" style="margin-left: unset !important; margin-right: unset !important; font-family: 'Montserrat',sans-serif;">Title</label>
+        <div style="width: 100%;border-radius: 5px ; border: 1.5px solid rgb(128, 125, 125);float: right; height: 100%; margin-bottom: 5%;">
+            <div id="sample3" class="sample3" contenteditable="true" placeholder="Type here..." style="height: 90%; outline: none; text-align: left; margin:2%;"></div>
         </div>
     </div>
         
@@ -228,7 +227,7 @@
     </div>
     <div style="margin-left: 7%; margin-right: 7%; height: fit-content; min-height: 30%;">
         <h3 id="titlename" style=" float: left; text-align: left;font-family: 'Montserrat',sans-serif;">Preview</h3>
-        <div style="width: 100%; border-radius: 5px ;border: 1.5px solid rgb(128, 125, 125); float: left; height: 100%; margin-bottom: 5%; word-wrap: break-word; white-space: wrap;">
+        <div style=" cursor: not-allowed;width: 100%; border-radius:5px;background-color: #e9e7e8; float: left; height: 100%; margin-bottom: 5%; word-wrap: break-word; white-space: wrap;">
             <h1 id="titleoutput" style="margin:2%;font-size: 40px; height: fit-content;">Title</h1>
             <h1 id="maintextoutput" style="margin:2%; margin-right:2%;font-size: 20px; height: fit-content;">Description</h1>
         </div>
@@ -239,7 +238,7 @@
     <script>
         $(document).ready(function(){
             $("#sample3").keyup(function(){
-                var curr = $(this).val();
+                var curr = $(this).html();
                 $("#titleoutput").text(curr);
             });
 
