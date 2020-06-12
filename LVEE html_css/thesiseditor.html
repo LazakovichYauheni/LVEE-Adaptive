@@ -255,10 +255,10 @@
     </div>
 
     <div id="titlecontainer" class="sticky-header is-sticky">
-        <h3 id="titlename" style="font-family: 'Montserrat',sans-serif;">Text licensed under:</h3>
+        <h3 id="titlename" style="font-family: 'Montserrat',sans-serif;">License</h3>
         <div style="width: 100%;border-radius: 5px ; border: 1.5px solid rgb(128, 125, 125);float: right; height: 100%; margin-bottom: 5%;">
             <div id="licensetext" contenteditable="true" data-placeholder="xxx" style=" height: 90%; outline: none; text-align: left; margin:2%;">
-            
+                Creative Commons Attribution-ShareAlike 3.0 license
             </div>
         </div>
     </div>
@@ -271,7 +271,7 @@
             <h1 id="conferenceoutput" style="margin:2%;font-size: 20px; height: fit-content; text-align: center;">Conference</h1>
             <h1 id="annotationoutput" style="margin:2%;font-size: 20px; height: fit-content; font-style: italic;">Annotation</h1>
             <h1 id="maintextoutput" style="margin:2%; margin-right:2%;font-size: 20px; height: fit-content;">Description</h1>
-            <h1 id="licenseoutput" style="margin:2%;font-size: 20px; height: fit-content;">Abstract licensed under Creative Commons Attribution-ShareAlike 3.0 license</h1>
+            <h1 id="licenseoutput" style="margin:2%;font-size: 20px; height: fit-content;"></h1>
         </div>
     </div>
     <div style=" text-align: center; width: 100%; justify-content: center; display: flex; margin-bottom: 50px;">
@@ -309,9 +309,9 @@
             });
 
             var author = $("#authorsoutput").html();
-            var license = $("#licenseoutput").html();
+            var license = $("#licensetext").html();
             $("#sample4").text(author);
-            $("#licensetext").text(license);
+            $("#licenseoutput").text("Abstract licensed under"+ license);
         });
     </script>
 </body>
